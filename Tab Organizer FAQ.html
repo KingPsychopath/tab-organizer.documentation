@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>Tab Organizer Help/FAQ</title>
+
+    <link rel="stylesheet" type="text/css" href="Changelog.css" />
+    <link rel="stylesheet" type="text/css" href="FAQ.css" />
+
+    <script>
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-9285544-4']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+<body>
+    <h1>Tab Organizer Help/FAQ</h1>
+    <nav>
+        <ol>
+            <li><a href="#what-are-search-queries">What are search queries?</a></li>
+            <li><a href="#how-do-you-use-search-queries">How do you use search queries?</a></li>
+            <li><a href="#what-are-the-different-search-queries">What are the different search queries?</a></li>
+        </ol>
+    </nav>
+
+    <h3 id="what-are-search-queries">What are search queries?</h3>
+    <blockquote>
+        <p>Search queries are a special syntax that is used to perform advanced searches.</p>
+        <p>As an example, you can use the <code>same:url</code> search query to find all tabs that have the same URL.</p>
+    </blockquote>
+
+    <h3 id="how-do-you-use-search-queries">How do you use search queries?</h3>
+    <blockquote>
+        <p>Just type them into the search box. You can also combine search queries and advanced syntax.</p>
+        <p>For instance, <code>same:url OR google</code> will find all tabs that have the same URL, and also the tabs that contain the word "google."</p>
+    </blockquote>
+
+    <h3 id="what-are-the-different-search-queries">What are the different search queries?</h3>
+    <blockquote>
+        <ul>
+            <li><code>is:image</code>
+                <div>Shows the tabs that are images. <a href="http://mfrost.typepad.com/cute_overload/images/2007/12/29/caturday_flowchart.jpg">Here</a> is an example.</div>
+            </li>
+            <li><code>is:selected</code>
+                <div>Shows tabs that have been selected (for instance, with Ctrl or Shift).</div>
+            </li>
+            <li><code>inurl:</code>
+                <div>Shows tabs whose URL matches the supplied text. For instance, <code>inurl:google.com</code> would show tabs that have "google.com" in their URL.</div>
+            </li>
+            <li><code>intitle:</code>
+                <div>Shows tabs whose title matches the supplied text. For instance, <code>intitle:caturday</code> would show tabs that have "caturday" in their title.</div>
+            </li>
+            <li><code>same:url</code>
+                <div>Shows tabs whose URLs are the same. This is useful for finding duplicate tabs.</div>
+            </li>
+            <li><code>same:title</code>
+                <div>Shows tabs whose titles are the same. This is useful for finding duplicate tabs.</div>
+            </li>
+            <li><code>window:</code>
+                <p>Shows tabs which are within a certain window. For instance, <code>window:5</code> would show all the tabs in the window named 5.</p>
+                <p>You can also use a comma to easily show multiple windows at once: <code>window:3,5,9</code></p>
+                <p>And you can use a dash to show windows in sequence: <code>window:1-5</code></p>
+                <p><strong>Note:</strong> this works with custom names too. If you rename a window "foo", you can show it with <code>window:foo</code></p>
+                <p><strong>Note:</strong> there is a special value called <code>selected</code> that will show the window that is focused within Chrome.</p>
+                <p>For instance, <code>window:selected</code> will show the focused window, and <code>window:1-5,selected</code> will show windows 1 through 5, and the focused window.</p>
+            </li>
+        </ul>
+    </blockquote>
+</body>
+</html>

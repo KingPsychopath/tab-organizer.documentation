@@ -1,0 +1,30 @@
+@charset "UTF-8";
+body { padding-bottom: 0; }
+h3 {
+    margin-top: 0.75em;
+    margin-bottom: -1em;
+}
+blockquote { margin: 1.5em 0 2em 1em; }
+
+div, p {
+    margin: 0.25em 0;
+    margin-left: 1em;
+}
+p { margin-bottom: 1em; }
+nav {
+    display: inline-block;
+    background-color: #F9F9F9;
+    border: 1px solid #AAA;
+    font-size: 95%;
+    padding: 0 1.2em;
+    padding-left: 0;
+    margin: 1em 0;
+    margin-top: 1.5em;
+    text-align: center;
+}
+li { margin: 1em 0; }
+ol { text-align: left; }
+ol > li {
+    list-style-type: decimal;
+    margin: 0 0 0.25em;
+}
