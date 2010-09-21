@@ -20,7 +20,10 @@ hr {
     margin: 0 0 -0.5em -21px;
 }
 
-code { color: darkgreen; }
+code {
+    color: darkgreen;
+    white-space: nowrap;
+}
 span.version {
     font-family: serif;
     font-weight: bold;
