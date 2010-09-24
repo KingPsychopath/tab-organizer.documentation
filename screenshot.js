@@ -82,7 +82,10 @@ Platform.windows.getAll = (function () {
 
             var titles = state.titles;
             addEventListener("beforeunload", function () {
-                state.titles = titles;
+                state.list.forEach(function (item, i) {
+                    item.tabIcon.indexText.value = titles[i];
+                });
+                //state.titles = titles;
             }, true);
 
             state.titles = ["Main", "Wikipedia", "Mozilla", "YouTube"];
