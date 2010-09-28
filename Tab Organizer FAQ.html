@@ -34,6 +34,7 @@
             <li><a href="#what-are-special-queries">What are special queries?</a></li>
             <li><a href="#how-do-you-use-special-queries">How do you use special queries?</a></li>
             <li><a href="#what-are-the-different-special-queries">What are the different special queries?</a></li>
+            <li><a href="#why-inurl-or-intitle">What's the point of <em>inurl:</em> and <em>intitle:</em>?</a></li>
             <li><a href="#what-is-advanced-syntax">You mentioned advanced syntax, what is that?</a></li>
             <li><a href="#what-has-higher-precedence-and-or">What has higher precedence: AND or OR?</a></li>
         </ol>
@@ -147,6 +148,19 @@
                 <p>For instance, <code>window:focused</code> will show the focused window, and <code>window:1-5,focused</code> will show windows 1 through 5, and the focused window.</p>
             </li>
         </ul>
+    </blockquote>
+
+    <h3 id="why-inurl-or-intitle">What's the point of <code>inurl:</code> and <code>intitle:</code>?</h3>
+    <blockquote>
+        <p><code>inurl:</code> is useful when searching for things that are only found in URLs, like hash fragments or URL queries:</p>
+        <ul>
+            <li><code>inurl:#</code></li>
+            <li><code>inurl:?</code></li>
+            <li><code>inurl:https://</code></li>
+        </ul>
+        <p><code>intitle:</code> is useful when you want to <em>exclude</em> things that normally appear in the URL. For instance, let's say you have a tab whose title contains the phrase "http".</p>
+        <p>If you typed in <code>http</code> it would probably match most of your tabs, because URLs often start with <code>http://</code> On the other hand, you can use <code>intitle:http</code> to find the correct tab.</p>
+        <p>Another example is searching for the phrase "com". Websites often have that in the URL, so using <code>intitle:com</code> will filter those out.</p>
     </blockquote>
 
     <h3 id="what-is-advanced-syntax">You mentioned advanced syntax, what is that?</h3>
