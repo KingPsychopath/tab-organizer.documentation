@@ -65,7 +65,7 @@ Platform.windows.getAll = (function () {
     };
 
     return function (info, action) {
-        setTimeout(function () {
+//        setTimeout(function () {
 //        saved(info, function (windows) {
 //            windows.forEach(function (win) {
 //                //console.warn(win.tabs);
@@ -357,6 +357,6 @@ Platform.windows.getAll = (function () {
                     url: "http://www.youtube.com/watch?v=EmD9WnLYR5I"
                 }])
             ]);
-        }, 0);
+//        }, 0);
     };
 }());
