@@ -81,12 +81,14 @@ Platform.windows.getAll = (function () {
 //        return;
 
             var titles = state.titles;
-            addEventListener("beforeunload", function () {
-                state.list.forEach(function (item, i) {
-                    item.tabIcon.indexText.value = titles[i];
-                });
+            addEventListener("unload", function () {
+//                state.list.forEach(function (item, i) {
+//                    item.tabIcon.indexText.value = titles[i];
+//                });
                 //state.titles = titles;
-            }, true);
+
+                localStorage["window.titles"] = JSON.stringify(titles);
+            }, false);
 
             state.titles = ["Main", "Wikipedia", "Mozilla", "YouTube"];
 
