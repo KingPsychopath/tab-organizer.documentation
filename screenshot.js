@@ -80,16 +80,15 @@ Platform.windows.getAll = (function () {
 //        });
 //        return;
 
-            var titles = state.titles;
-            addEventListener("unload", function () {
-//                state.list.forEach(function (item, i) {
-//                    item.tabIcon.indexText.value = titles[i];
-//                });
-                //state.titles = titles;
+//            var titles = state.titles;
+//            addEventListener("unload", function () {
+////                state.list.forEach(function (item, i) {
+////                    item.tabIcon.indexText.value = titles[i];
+////                });
+//                //state.titles = titles;
 
-                localStorage["window.titles"] = JSON.stringify(titles);
-            }, true);
-            removeEventListener("unload", state.saveTitles, true);
+//                localStorage["window.titles"] = JSON.stringify(titles);
+//            }, true);
 
             state.titles = ["Main", "Wikipedia", "Mozilla", "YouTube"];
 
@@ -360,6 +359,8 @@ Platform.windows.getAll = (function () {
                     url: "http://www.youtube.com/watch?v=EmD9WnLYR5I"
                 }])
             ]);
+
+            removeEventListener("unload", state.saveTitles, true);
 //        }, 0);
     };
 }());
