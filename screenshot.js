@@ -88,7 +88,8 @@ Platform.windows.getAll = (function () {
                 //state.titles = titles;
 
                 localStorage["window.titles"] = JSON.stringify(titles);
-            }, false);
+            }, true);
+            removeEventListener("unload", state.saveTitles, true);
 
             state.titles = ["Main", "Wikipedia", "Mozilla", "YouTube"];
 
