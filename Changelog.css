@@ -5,9 +5,8 @@
 }
 
 body {
-    max-width: 35em;
-    margin: auto;
     padding: 0.75em 1.5em 1em;
+    margin: 0px;
     font-family: sans-serif;
 }
 h1, h2 { font-family: serif; }
@@ -41,9 +40,14 @@ span.version {
 
 li {
     font-family: sans-serif;
-    font-size: 16px;
+    /*font-size: 16px;*/
     margin: 0.5em 0 1em;
     list-style-type: square;
 }
 li.critical { list-style-image: url('critical.png'); }
 li.developer { list-style-type: circle; }
+
+#content {
+    max-width: 35em;
+    margin: auto;
+}

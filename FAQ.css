@@ -1,5 +1,20 @@
 @charset "UTF-8";
-body { padding-bottom: 0; }
+body {
+    /*display: -webkit-box;
+    -webkit-box-orient: vertical;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0px;*/
+    padding-right: 5em;
+    padding-bottom: 0px;
+    font-size: 16px;
+    /*overflow: hidden;*/
+}
+h1 {
+    margin-bottom: 1em;
+}
 h3 {
     color: darkred;
     margin-top: 0.75em;
@@ -7,21 +22,10 @@ h3 {
 }
 blockquote { margin: 1.5em 0 2em 1em; }
 
-div, p {
+p {
     margin: 0.25em 0;
     margin-left: 1em;
-}
-p { margin-bottom: 1em; }
-nav {
-    display: inline-block;
-    background-color: #F9F9F9;
-    border: 1px solid #AAA;
-    font-size: 95%;
-    padding: 0 1.2em;
-    padding-left: 0;
-    margin: 1em 0;
-    margin-top: 1.5em;
-    text-align: center;
+    margin-bottom: 1em;
 }
 li {
     margin: 1em 0;
@@ -33,4 +37,64 @@ ol { text-align: left; }
 ol > li {
     list-style-type: decimal;
     /*margin: 0 0 0.25em;*/
+}
+
+#container {
+    position: relative;
+    z-index: 1;
+    /*padding-left: 20em;*/
+    /*display: -webkit-box;*/
+    /*-webkit-box-flex: 1;*/
+    /*position: fixed;*/
+    overflow: hidden;
+    width: 60em;
+    padding-right: 4em;
+    /*width: 980px;*/
+    margin: 0px auto;
+    /*height: 100%;*/
+}
+#navigation {
+    /*-webkit-box-sizing: border-box;*/
+
+    position: fixed;
+    z-index: 1;
+    /*left: 0px;
+    top: 0px;*/
+    width: 20em;
+    max-height: 89%;
+    /*width: 300px;*/
+    /*height: 100%;*/
+    float: left;
+
+    padding: 0px 1.5em 0.25em 0px;
+    margin: 1em;
+    /*margin: 1em 0;
+    margin-top: 1em;*/
+
+    background-color: #F9F9F9;
+    border: 1px solid #AAA;
+    /*border-left: none;
+    border-top: none;*/
+
+    font-size: 95%;
+    text-align: center;
+
+    overflow: auto;
+}
+#top {
+    display: inline-block;
+    margin: 1em 0px 0.5em;
+    /*padding: 0.5em;*/
+    /*color: blue;*/
+    text-decoration: none;
+}
+#content {
+    float: right;
+    width: 35em;
+    /*width: 640px;*/
+    /*display: -webkit-box;
+    -webkit-box-flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    overflow: auto;*/
 }

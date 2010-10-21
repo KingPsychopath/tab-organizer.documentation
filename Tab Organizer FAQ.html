@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" type="text/css" href="Changelog.css" />
     <link rel="stylesheet" type="text/css" href="FAQ.css" />
+    <!--<link rel="stylesheet" type="text/css" href="Fixed%20Nav.css" />-->
 
     <!--
         http://goo.gl/dv2S
@@ -25,178 +26,203 @@
     </script>
 </head>
 <body>
-    <h1>Tab Organizer Help/FAQ</h1>
-    <nav>
-        <ol>
-            <li><a href="#what-is-the-difference-between-a-selected-tab-and-a-focused-tab">What's the difference between a selected tab and a focused tab?</a></li>
-            <li><a href="#does-tab-organizer-support-keyboard-accessibility">Does Tab Organizer support keyboard accessibility?</a></li>
-            <li><a href="#how-do-I-do-blank-with-the-keyboard">Okay, how do I do [blank] with the keyboard?</a></li>
-            <li><a href="#what-are-special-queries">What are special queries?</a></li>
-            <li><a href="#how-do-you-use-special-queries">How do you use special queries?</a></li>
-            <li><a href="#what-are-the-different-special-queries">What are the different special queries?</a></li>
-            <li><a href="#why-inurl-or-intitle">What's the point of <em>inurl:</em> and <em>intitle:</em>?</a></li>
-            <li><a href="#what-is-advanced-syntax">You mentioned advanced syntax, what's that?</a></li>
-            <li><a href="#what-has-higher-precedence-and-or">What has higher precedence: AND or OR?</a></li>
-        </ol>
-    </nav>
+    <div id="container">
+        <nav id="navigation">
+            <a id="top" href="">Goto top</a>
+            <ol>
+                <li><a href="#what-is-the-difference-between-a-selected-tab-and-a-focused-tab">What's the difference between a selected tab and a focused tab?</a></li>
+                <li><a href="#does-tab-organizer-support-keyboard-accessibility">Does Tab Organizer support keyboard accessibility?</a></li>
+                <li><a href="#how-do-I-do-blank-with-the-keyboard">Okay, how do I do [blank] with the keyboard?</a></li>
+                <li><a href="#what-are-special-queries">What are special queries?</a></li>
+                <li><a href="#how-do-you-use-special-queries">How do you use special queries?</a></li>
+                <li><a href="#what-are-the-different-special-queries">What are the different special queries?</a></li>
+                <li><a href="#why-inurl-or-intitle">What's the point of <em>inurl:</em> and <em>intitle:</em>?</a></li>
+                <li><a href="#what-is-advanced-syntax">You mentioned advanced syntax, what's that?</a></li>
+                <li><a href="#what-has-higher-precedence-and-or">What has higher precedence: AND or OR?</a></li>
+            </ol>
+        </nav>
 
-    <h3 id="what-is-the-difference-between-a-selected-tab-and-a-focused-tab">What's the difference between a selected tab and a focused tab?</h3>
-    <blockquote>
-        <p>A selected tab is one that you have selected, for instance with Ctrl or Shift. These show up as green within Tab Organizer.</p>
-        <p>A focused tab is one that is currently selected within Chrome. These show up as tan/orange within Tab Organizer.</p>
-    </blockquote>
+        <div id="content">
+            <h1>Tab Organizer Help/FAQ</h1>
 
-    <h3 id="does-tab-organizer-support-keyboard-accessibility">Does Tab Organizer support keyboard accessibility?</h3>
-    <blockquote>
-        <p>Absolutely! I put quite a bit of work into making sure that it is possible to do everything with the keyboard only.</p>
-        <p>Some things (like moving tabs) are more difficult with the keyboard, but it's still possible.</p>
-    </blockquote>
+            <h3 id="what-is-the-difference-between-a-selected-tab-and-a-focused-tab">What's the difference between a selected tab and a focused tab?</h3>
+            <blockquote>
+                <p>A selected tab is one that you have selected, for instance with Ctrl or Shift. These show up as green within Tab Organizer.</p>
+                <p>A focused tab is one that is currently selected within Chrome. These show up as tan/orange within Tab Organizer.</p>
+            </blockquote>
 
-    <h3 id="how-do-I-do-blank-with-the-keyboard">Okay, how do I do [blank] with the keyboard?</h3>
-    <blockquote>
-        <div>If you are using a Mac, use <code>⌘</code> instead of <code>Ctrl</code>.</div>
-        <ul>
-            <li><span class="emphasis">Undo (while the undo bar is visible):</span>
-                <div><code>Ctrl</code> + <code>Z</code>.</div>
-            </li>
-            <li><span class="emphasis">Select the search box:</span>
-                <div><code>Ctrl</code> + <code>F</code>.</div>
-            </li>
-            <li><span class="emphasis">Make a new window:</span>
-                <div><code>Ctrl</code> + <code>N</code>.</div>
-            </li>
-            <li><span class="emphasis">Select a window:</span>
-                <div><code>Tab</code> or <code>Shift</code> + <code>Tab</code>.</div>
-            </li>
-            <li><span class="emphasis">While a window is selected:</span>
+            <h3 id="does-tab-organizer-support-keyboard-accessibility">Does Tab Organizer support keyboard accessibility?</h3>
+            <blockquote>
+                <p>Absolutely! I put quite a bit of work into making sure that it is possible to do everything with the keyboard only.</p>
+                <p>Some things (like moving tabs) are more difficult with the keyboard, but it's still possible.</p>
+            </blockquote>
+
+            <h3 id="how-do-I-do-blank-with-the-keyboard">Okay, how do I do [blank] with the keyboard?</h3>
+            <blockquote>
+                <p>If you are using a Mac, use <code>⌘</code> instead of <code>Ctrl</code>.</p>
                 <ul>
-                    <li><span class="emphasis">Focus a tab:</span>
-                        <div><code>Up</code> or <code>Down</code> arrow keys.</div>
+                    <li><span class="emphasis">Undo (while the undo bar is visible):</span>
+                        <p><code>Ctrl</code> + <code>Z</code>.</p>
                     </li>
-                    <li><span class="emphasis">Select a tab:</span>
-                        <p><code>Ctrl</code> or <code>Shift</code> + <code>Space</code>/<code>Enter</code>.</p>
-                        <p>e.g. <code>Ctrl</code> + <code>Space</code> is the same as <code>Ctrl</code> + <code>Click</code>, and <code>Shift</code> + <code>Space</code> is the same as <code>Shift</code> + <code>Click</code>.</p>
-                        <p>You can also use <code>Enter</code> instead of <code>Space</code>. For instance, <code>Ctrl</code> + <code>Enter</code>.</p>
+                    <li><span class="emphasis">Select the search box:</span>
+                        <p><code>Ctrl</code> + <code>F</code>.</p>
                     </li>
-                    <li><span class="emphasis">Close a tab:</span>
-                        <div><code>Alt</code> + <code>Space</code>/<code>Enter.</code>
+                    <li><span class="emphasis">Make a new window:</span>
+                        <p><code>Ctrl</code> + <code>N</code>.</p>
                     </li>
-                    <li><span class="emphasis">Open the context menu:</span>
-                        <div><code>Ctrl</code> + <code>M</code>.</div>
+                    <li><span class="emphasis">Select a window:</span>
+                        <p><code>Tab</code> or <code>Shift</code> + <code>Tab</code>.</p>
                     </li>
-                    <li><span class="emphasis">Everything else:</span>
-                        <div>Use the context menu.</div>
+                    <li><span class="emphasis">While a window is selected:</span>
+                        <ul>
+                            <li><span class="emphasis">Focus a tab:</span>
+                                <p><code>Up</code> or <code>Down</code> arrow keys.</p>
+                            </li>
+                            <li><span class="emphasis">Select a tab:</span>
+                                <p><code>Ctrl</code> or <code>Shift</code> + <code>Space</code>/<code>Enter</code>.</p>
+                                <p>e.g. <code>Ctrl</code> + <code>Space</code> is the same as <code>Ctrl</code> + <code>Click</code>, and <code>Shift</code> + <code>Space</code> is the same as <code>Shift</code> + <code>Click</code>.</p>
+                                <p>You can also use <code>Enter</code> instead of <code>Space</code>. For instance, <code>Ctrl</code> + <code>Enter</code>.</p>
+                            </li>
+                            <li><span class="emphasis">Close a tab:</span>
+                                <p><code>Alt</code> + <code>Space</code>/<code>Enter.</code></p>
+                            </li>
+                            <li><span class="emphasis">Open the context menu:</span>
+                                <p><code>Ctrl</code> + <code>M</code>.</p>
+                            </li>
+                            <li><span class="emphasis">While the context menu is opened:</span>
+                                <ul>
+                                    <li><span class="emphasis">Select an item:</span>
+                                        <p><code>Up</code> or <code>Down</code> arrow keys.</p>
+                                    </li>
+                                    <li><span class="emphasis">Activate the selected item:</span>
+                                        <p><code>Space</code>/<code>Enter</code>.</p>
+                                    </li>
+                                    <li><span class="emphasis">Move into/out of a submenu:</span>
+                                        <p><code>Left</code> or <code>Right</code> arrow keys.</p>
+                                    </li>
+                                    <li><span class="emphasis">Close the context menu:</span>
+                                        <p><code>Escape</code>.</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><span class="emphasis">Everything else:</span>
+                                <p>Use the context menu.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><span class="emphasis">Open the options page:</span>
+                        <p>Use <code>Tab</code> or <code>Shift</code> + <code>Tab</code> to select the <code>Options</code> link, then hit <code>Enter</code>.</p>
+                    </li>
+                    <li><span class="emphasis">While within the options page:</span>
+                        <ul>
+                            <li><span class="emphasis">Select anything:</span>
+                                <p><code>Tab</code> or <code>Shift</code> + <code>Tab</code>.</p>
+                            </li>
+                            <li><span class="emphasis">Change categories:</span>
+                                <p>Select the category box, then use the <code>Up</code> or <code>Down</code> arrow keys.</p>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
-            </li>
-            <li><span class="emphasis">Open the options page:</span>
-                <p>Use <code>Tab</code> or <code>Shift</code> + <code>Tab</code> to select the <code>Options</code> link, then hit <code>Enter</code>.</p>
-            </li>
-            <li><span class="emphasis">While within the options page:</span>
+            </blockquote>
+
+            <h3 id="what-are-special-queries">What are special queries?</h3>
+            <blockquote>
+                <p>Special queries are designed to make it easier to find certain types of tabs.</p>
+                <p>As an example, you can use the <code>same:url</code> special query to find all tabs that have the same URL.</p>
+            </blockquote>
+
+            <h3 id="how-do-you-use-special-queries">How do you use special queries?</h3>
+            <blockquote>
+                <p>Just type them into the search box. You can also combine special queries and advanced syntax.</p>
+                <p>For instance, <code>same:url OR google</code> will find all tabs that have the same URL, and also the tabs that contain the word "google."</p>
+            </blockquote>
+
+            <h3 id="what-are-the-different-special-queries">What are the different special queries?</h3>
+            <blockquote>
                 <ul>
-                    <li><span class="emphasis">Select anything:</span>
-                        <div><code>Tab</code> or <code>Shift</code> + <code>Tab</code>.</div>
+                    <li><span class="emphasis"><code>is:favorite</code></span>
+                        <p>Shows the tabs that have been favorited. You can favorite/unfavorite a tab by clicking on the star on the left side of the tab.</p>
                     </li>
-                    <li><span class="emphasis">Change categories:</span>
-                        <div>Select the category box, then use the <code>Up</code> or <code>Down</code> arrow keys.</div>
+                    <li><span class="emphasis"><code>is:image</code></span>
+                        <p>Shows the tabs that are images. <a href="http://mfrost.typepad.com/cute_overload/images/2007/12/29/caturday_flowchart.jpg">Here</a> is an example.</p>
+                    </li>
+                    <li><span class="emphasis"><code>is:selected</code></span>
+                        <p>Shows tabs that have been selected (for instance, with Ctrl or Shift).</p>
+                    </li>
+                    <li><span class="emphasis"><code>inurl:</code></span>
+                        <p>Shows tabs whose URL matches the supplied text. For instance, <code>inurl:google.com</code> would show tabs that have "google.com" in their URL.</p>
+                    </li>
+                    <li><span class="emphasis"><code>intitle:</code></span>
+                        <p>Shows tabs whose title matches the supplied text. For instance, <code>intitle:caturday</code> would show tabs that have "caturday" in their title.</p>
+                    </li>
+                    <li><span class="emphasis"><code>same:url</code></span>
+                        <p>Shows tabs whose URLs are the same. This is useful for finding duplicate tabs.</p>
+                    </li>
+                    <li><span class="emphasis"><code>same:title</code></span>
+                        <p>Shows tabs whose titles are the same. This is useful for finding duplicate tabs.</p>
+                    </li>
+                    <li><span class="emphasis"><code>window:</code></span>
+                        <p>Shows tabs which are within a certain window. For instance, <code>window:5</code> would show all the tabs in the window named 5.</p>
+                        <p>You can also use a comma to easily show multiple windows at once: <code>window:3,5,9</code></p>
+                        <p>And you can use a dash to show windows in sequence: <code>window:1-5</code></p>
+                        <p><strong>Note:</strong> this works with custom names too. If you rename a window "foo", you can show it with <code>window:foo</code></p>
+                        <p><strong>Note:</strong> there is a special value called <code>focused</code> that will show the window that is focused within Chrome.</p>
+                        <p>For instance, <code>window:focused</code> will show the focused window, and <code>window:1-5,focused</code> will show windows 1 through 5, and the focused window.</p>
                     </li>
                 </ul>
-            </li>
-        </ul>
-    </blockquote>
+            </blockquote>
 
-    <h3 id="what-are-special-queries">What are special queries?</h3>
-    <blockquote>
-        <p>Special queries are designed to make it easier to find certain types of tabs.</p>
-        <p>As an example, you can use the <code>same:url</code> special query to find all tabs that have the same URL.</p>
-    </blockquote>
+            <h3 id="why-inurl-or-intitle">What's the point of <em>inurl:</em> and <em>intitle:</em>?</h3>
+            <blockquote>
+                <p><code>inurl:</code> is useful when searching for things that are only found in URLs, like hash fragments or URL queries:</p>
+                <ul>
+                    <li><code>inurl:#</code></li>
+                    <li><code>inurl:?</code></li>
+                    <li><code>inurl:https://</code></li>
+                </ul>
+                <p><code>intitle:</code> is useful when you want to <em>exclude</em> things that normally appear in the URL. For instance, let's say you have a tab whose title contains the phrase "http".</p>
+                <p>If you typed in <code>http</code> it would probably match most of your tabs, because URLs often start with <code>http://</code> On the other hand, you can use <code>intitle:http</code> to find the correct tab.</p>
+                <p>Another example is searching for the phrase "com". Websites often have that in the URL, so using <code>intitle:com</code> will filter those out.</p>
+            </blockquote>
 
-    <h3 id="how-do-you-use-special-queries">How do you use special queries?</h3>
-    <blockquote>
-        <p>Just type them into the search box. You can also combine special queries and advanced syntax.</p>
-        <p>For instance, <code>same:url OR google</code> will find all tabs that have the same URL, and also the tabs that contain the word "google."</p>
-    </blockquote>
+            <h3 id="what-is-advanced-syntax">You mentioned advanced syntax, what's that?</h3>
+            <blockquote>
+                <p>Advanced syntax is a way to combine words together to make your searches even more accurate, helping you to find the exact tabs you want.</p>
+                <p>If you have used Google Search, you may already know that it supports advanced syntax. Tab Organizer is very similar. Here is a list of the advanced syntax supported by Tab Organizer:</p>
+                <ul>
+                    <li><span class="emphasis"><code>-</code></span>
+                        <p>Excludes an item from the search. For instance, <code>-google</code> would show all tabs that do <em>not</em> contain the word "google".</p>
+                        <p>This works with special queries as well. For instance, you can use <code>-window:5</code> to show every window <em>except</em> the window named 5.</p>
+                    </li>
+                    <li><span class="emphasis"><em>Space</em></span>
+                        <p>Using a space is the same as logical AND. This narrows your search to be more specific.</p>
+                        <p>For instance, <code>wikipedia chrome</code> would show tabs that match both "wikipedia" <em>and</em> "chrome" at the same time.</p>
+                    </li>
+                    <li><span class="emphasis"><code>OR</code></span>
+                        <p>This <em>adds</em> items to the search. For instance, <code>google OR youtube</code> would show tabs that match either "google" or "youtube".</p>
+                        <p>You can also use the <code>|</code> character, like this: <code>google | youtube</code></p>
+                    </li>
+                </ul>
+                <p>You can combine the above as much as you like. For instance, <code>same:url google | window:bar -inurl:youtube</code> would show the tabs that have the same URL and match "google", and also the tabs that are in the window named "bar", but not those that have "youtube" in their URL.</p>
+            </blockquote>
 
-    <h3 id="what-are-the-different-special-queries">What are the different special queries?</h3>
-    <blockquote>
-        <ul>
-            <li><span class="emphasis"><code>is:image</code></span>
-                <div>Shows the tabs that are images. <a href="http://mfrost.typepad.com/cute_overload/images/2007/12/29/caturday_flowchart.jpg">Here</a> is an example.</div>
-            </li>
-            <li><span class="emphasis"><code>is:selected</code></span>
-                <div>Shows tabs that have been selected (for instance, with Ctrl or Shift).</div>
-            </li>
-            <li><span class="emphasis"><code>inurl:</code></span>
-                <div>Shows tabs whose URL matches the supplied text. For instance, <code>inurl:google.com</code> would show tabs that have "google.com" in their URL.</div>
-            </li>
-            <li><span class="emphasis"><code>intitle:</code></span>
-                <div>Shows tabs whose title matches the supplied text. For instance, <code>intitle:caturday</code> would show tabs that have "caturday" in their title.</div>
-            </li>
-            <li><span class="emphasis"><code>same:url</code></span>
-                <div>Shows tabs whose URLs are the same. This is useful for finding duplicate tabs.</div>
-            </li>
-            <li><span class="emphasis"><code>same:title</code></span>
-                <div>Shows tabs whose titles are the same. This is useful for finding duplicate tabs.</div>
-            </li>
-            <li><span class="emphasis"><code>window:</code></span>
-                <p>Shows tabs which are within a certain window. For instance, <code>window:5</code> would show all the tabs in the window named 5.</p>
-                <p>You can also use a comma to easily show multiple windows at once: <code>window:3,5,9</code></p>
-                <p>And you can use a dash to show windows in sequence: <code>window:1-5</code></p>
-                <p><strong>Note:</strong> this works with custom names too. If you rename a window "foo", you can show it with <code>window:foo</code></p>
-                <p><strong>Note:</strong> there is a special value called <code>focused</code> that will show the window that is focused within Chrome.</p>
-                <p>For instance, <code>window:focused</code> will show the focused window, and <code>window:1-5,focused</code> will show windows 1 through 5, and the focused window.</p>
-            </li>
-        </ul>
-    </blockquote>
-
-    <h3 id="why-inurl-or-intitle">What's the point of <code>inurl:</code> and <code>intitle:</code>?</h3>
-    <blockquote>
-        <p><code>inurl:</code> is useful when searching for things that are only found in URLs, like hash fragments or URL queries:</p>
-        <ul>
-            <li><code>inurl:#</code></li>
-            <li><code>inurl:?</code></li>
-            <li><code>inurl:https://</code></li>
-        </ul>
-        <p><code>intitle:</code> is useful when you want to <em>exclude</em> things that normally appear in the URL. For instance, let's say you have a tab whose title contains the phrase "http".</p>
-        <p>If you typed in <code>http</code> it would probably match most of your tabs, because URLs often start with <code>http://</code> On the other hand, you can use <code>intitle:http</code> to find the correct tab.</p>
-        <p>Another example is searching for the phrase "com". Websites often have that in the URL, so using <code>intitle:com</code> will filter those out.</p>
-    </blockquote>
-
-    <h3 id="what-is-advanced-syntax">You mentioned advanced syntax, what's that?</h3>
-    <blockquote>
-        <p>Advanced syntax is a way to combine words together to make your searches even more accurate, helping you to find the exact tabs you want.</p>
-        <p>If you have used Google Search, you may already know that it supports advanced syntax. Tab Organizer is very similar. Here is a list of the advanced syntax supported by Tab Organizer:</p>
-        <ul>
-            <li><span class="emphasis"><code>-</code></span>
-                <p>Excludes an item from the search. For instance, <code>-google</code> would show all tabs that do <em>not</em> contain the word "google".</p>
-                <p>This works with special queries as well. For instance, you can use <code>-window:5</code> to show every window <em>except</em> the window named 5.</p>
-            </li>
-            <li><span class="emphasis"><em>Space</em></span>
-                <p>Using a space is the same as logical AND. This narrows your search to be more specific.</p>
-                <p>For instance, <code>wikipedia chrome</code> would show tabs that match both "wikipedia" <em>and</em> "chrome" at the same time.</p>
-            </li>
-            <li><span class="emphasis"><code>OR</code></span>
-                <p>This <em>adds</em> items to the search. For instance, <code>google OR youtube</code> would show tabs that match either "google" or "youtube".</p>
-                <p>You can also use the <code>|</code> character, like this: <code>google | youtube</code></p>
-            </li>
-        </ul>
-        <p>You can combine the above as much as you like. For instance, <code>same:url google | window:bar -inurl:youtube</code> would show the tabs that have the same URL and match "google", and also the tabs that are in the window named "bar", but not those that have "youtube" in their URL.</p>
-    </blockquote>
-
-    <h3 id="what-has-higher-precedence-and-or">What has higher precedence: AND or OR?</h3>
-    <blockquote>
-        <p>AND has higher precedence. That means:</p>
-        <ul>
-            <li><code>foo bar | qux</code>
-                <div>(foo AND bar) OR qux</div>
-            </li>
-            <li><code>foo | bar qux</code>
-                <div>foo OR (bar AND qux)</div>
-            </li>
-            <li><code>foo bar | qux corge</code>
-                <div>(foo AND bar) OR (qux AND corge)</div>
-            </li>
-        </ul>
-    </blockquote>
+            <h3 id="what-has-higher-precedence-and-or">What has higher precedence: AND or OR?</h3>
+            <blockquote>
+                <p>AND has higher precedence. That means:</p>
+                <ul>
+                    <li><code>foo bar | qux</code>
+                        <p>(foo AND bar) OR qux</p>
+                    </li>
+                    <li><code>foo | bar qux</code>
+                        <p>foo OR (bar AND qux)</p>
+                    </li>
+                    <li><code>foo bar | qux corge</code>
+                        <p>(foo AND bar) OR (qux AND corge)</p>
+                    </li>
+                </ul>
+            </blockquote>
+        </div>
+    </div>
 </body>
 </html>

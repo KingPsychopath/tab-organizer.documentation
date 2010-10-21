@@ -1,0 +1,22 @@
+@charset "UTF-8";
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+#container {
+    position: relative;
+    width: 980px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+#navigation {
+    position: fixed;
+    float: left;
+    width: 300px;
+}
+#content {
+    float: right;
+    padding: 0px 20px 20px;
+    width: 640px;
+}
