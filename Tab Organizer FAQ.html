@@ -31,14 +31,28 @@
             <a id="top" href="">Goto top</a>
             <ol>
                 <li><a href="#what-is-the-difference-between-a-selected-tab-and-a-focused-tab">What's the difference between a selected tab and a focused tab?</a></li>
+                <hr />
                 <li><a href="#does-tab-organizer-support-keyboard-accessibility">Does Tab Organizer support keyboard accessibility?</a></li>
-                <li><a href="#how-do-I-do-blank-with-the-keyboard">Okay, how do I do [blank] with the keyboard?</a></li>
+                <li><a href="#what-are-the-different-keyboard-shortcuts">What are the different keyboard shortcuts?</a></li>
+                <hr />
                 <li><a href="#what-are-special-queries">What are special queries?</a></li>
-                <li><a href="#how-do-you-use-special-queries">How do you use special queries?</a></li>
+                <li><a href="#how-do-use-special-queries">How do I use special queries?</a></li>
                 <li><a href="#what-are-the-different-special-queries">What are the different special queries?</a></li>
                 <li><a href="#why-inurl-or-intitle">What's the point of <em>inurl:</em> and <em>intitle:</em>?</a></li>
+                <hr />
                 <li><a href="#what-is-advanced-syntax">You mentioned advanced syntax, what's that?</a></li>
                 <li><a href="#what-has-higher-precedence-and-or">What has higher precedence: AND or OR?</a></li>
+                <hr />
+                <li><a href="#what-are-macros">What are macros?</a></li>
+                <li><a href="#how-do-make-macros">How do I make macros?</a></li>
+                <li><a href="#what-are-the-different-macro-actions">What are the different macro actions?</a></li>
+                <li><a href="#okay-but-how-do-trigger-the-macro">Okay, but how do I trigger the macro?</a></li>
+                <li><a href="#can-see-some-examples-of-macros-and-what-they-do">Can I see some examples of macros and what they do?</a></li>
+                <hr />
+                <li><a href="#can-you-explain-usage-tracking">Can you explain usage tracking?</a></li>
+                <li><a href="#what-things-are-tracked">What things are tracked?</a></li>
+                <li><a href="#why-is-usage-tracking-enabled-by-default">Why is usage tracking enabled by default?</a></li>
+                <li><a href="#how-has-usage-tracking-been-beneficial">How has usage tracking been beneficial?</a></li>
             </ol>
         </nav>
 
@@ -48,7 +62,7 @@
             <h3 id="what-is-the-difference-between-a-selected-tab-and-a-focused-tab">What's the difference between a selected tab and a focused tab?</h3>
             <blockquote>
                 <p>A selected tab is one that you have selected, for instance with Ctrl or Shift. These show up as green within Tab Organizer.</p>
-                <p>A focused tab is one that is currently selected within Chrome. These show up as tan/orange within Tab Organizer.</p>
+                <p>A focused tab is one that is currently focused within Chrome. These show up as tan/orange within Tab Organizer.</p>
             </blockquote>
 
             <h3 id="does-tab-organizer-support-keyboard-accessibility">Does Tab Organizer support keyboard accessibility?</h3>
@@ -57,7 +71,7 @@
                 <p>Some things (like moving tabs) are more difficult with the keyboard, but it's still possible.</p>
             </blockquote>
 
-            <h3 id="how-do-I-do-blank-with-the-keyboard">Okay, how do I do [blank] with the keyboard?</h3>
+            <h3 id="what-are-the-different-keyboard-shortcuts">What are the different keyboard shortcuts?</h3>
             <blockquote>
                 <p>If you are using a Mac, use <code>⌘</code> instead of <code>Ctrl</code>.</p>
                 <ul>
@@ -132,15 +146,18 @@
                 <p>As an example, you can use the <code>same:url</code> special query to find all tabs that have the same URL.</p>
             </blockquote>
 
-            <h3 id="how-do-you-use-special-queries">How do you use special queries?</h3>
+            <h3 id="how-do-use-special-queries">How do I use special queries?</h3>
             <blockquote>
                 <p>Just type them into the search box. You can also combine special queries and advanced syntax.</p>
-                <p>For instance, <code>same:url OR google</code> will find all tabs that have the same URL, and also the tabs that contain the word "google."</p>
+                <p>For instance, <code>same:url | google</code> will find all tabs that have the same URL, and also the tabs that contain the word "google."</p>
             </blockquote>
 
             <h3 id="what-are-the-different-special-queries">What are the different special queries?</h3>
             <blockquote>
                 <ul>
+                    <li><span class="emphasis"><code>has:macro</code></span>
+                        <p>Shows the tabs that match one or more macros.</p>
+                    </li>
                     <li><span class="emphasis"><code>is:favorite</code></span>
                         <p>Shows the tabs that have been favorited. You can favorite/unfavorite a tab by clicking on the star on the left side of the tab.</p>
                     </li>
@@ -158,6 +175,7 @@
                     </li>
                     <li><span class="emphasis"><code>same:url</code></span>
                         <p>Shows tabs whose URLs are the same. This is useful for finding duplicate tabs.</p>
+                        <p><strong>Note:</strong> this excludes trailing slashes and hash fragments. That means that <code>http://foo/bar/</code> and <code>http://foo/bar#qux</code> are treated as the same URL.</p>
                     </li>
                     <li><span class="emphasis"><code>same:title</code></span>
                         <p>Shows tabs whose titles are the same. This is useful for finding duplicate tabs.</p>
@@ -166,7 +184,7 @@
                         <p>Shows tabs whose domains are the same. As an example, two or more tabs on the <code>www.google.com</code> domain would match. If a domain is used by only a single tab, that tab will not be shown.</p>
                     </li>
                     <li><span class="emphasis"><code>window:</code></span>
-                        <p>Shows tabs which are within a certain window. For instance, <code>window:5</code> would show all the tabs in the window named 5.</p>
+                        <p>Shows tabs that are within a certain window. For instance, <code>window:5</code> would show all the tabs in the window named 5.</p>
                         <p>You can also use a comma to easily show multiple windows at once: <code>window:3,5,9</code></p>
                         <p>And you can use a dash to show windows in sequence: <code>window:1-5</code></p>
                         <p><strong>Note:</strong> this works with custom names too. If you rename a window "foo", you can show it with <code>window:foo</code></p>
@@ -207,7 +225,7 @@
                         <p>You can also use the <code>|</code> character, like this: <code>google | youtube</code></p>
                     </li>
                 </ul>
-                <p>You can combine the above as much as you like. For instance, <code>same:url google | window:bar -inurl:youtube</code> would show the tabs that have the same URL and match "google", and also the tabs that are in the window named "bar", but not those that have "youtube" in their URL.</p>
+                <p>You can combine the above as much as you like. For instance, <code>same:url google | window:bar -inurl:youtube</code> would show the tabs that have the same URL and match "google", but also the tabs that are in the window named "bar", but not those that have "youtube" in their URL.</p>
             </blockquote>
 
             <h3 id="what-has-higher-precedence-and-or">What has higher precedence: AND or OR?</h3>
@@ -224,6 +242,137 @@
                         <p>(foo AND bar) OR (qux AND corge)</p>
                     </li>
                 </ul>
+            </blockquote>
+
+            <h3 id="what-are-macros">What are macros?</h3>
+            <blockquote>
+                <p>Macros let you do things such as move tabs into a window, close tabs, etc. Although you can do those things manually, macros let you do it much faster and easier. This is especially useful if you do the same actions repeatedly.</p>
+            </blockquote>
+
+            <h3 id="how-do-make-macros">How do I make macros?</h3>
+            <blockquote>
+                <p>First, open the options page. On the left side, open the Macros category. Use the "New macro" button to create a macro. A macro is composed of three parts:
+                    <ol>
+                        <li>an action
+                            <p>This describes what the macro does.</p>
+                        </li>
+                        <li>a search query
+                            <p>This describes what tabs will be affected.</p>
+                        </li>
+                        <li>an optional window name
+                            <p>This specifies a window within Tab Organizer. If the window doesn't exist, it is created. Leaving it blank means "new window".</p>
+                        </li>
+                    </ol>
+                </p>
+            </blockquote>
+
+            <h3 id="what-are-the-different-macro-actions">What are the different macro actions?</h3>
+            <blockquote>
+                <ul>
+                    <li><span class="emphasis"><code>require</code></span>
+                        <p>This action does two things. First, it takes tabs matching the search query, and moves them into the specified window. Second, it takes tabs that do not match the search query, and moves them out of the specified window.</p>
+                        <p>This allows you to divide tabs into windows based on their content. For instance, you may want all Wikipedia tabs to be placed in the window named "Wikipedia", all the YouTube tabs placed into the "YouTube" window, etc.</p>
+                    </li>
+                    <li><span class="emphasis"><code>move</code></span>
+                        <p>This is like <code>require</code> except it's one-way: it moves tabs into the window, but doesn't move non-matching tabs out. You can use this to collect many different tabs into a single window.</p>
+                    </li>
+                    <li><span class="emphasis"><code>close</code></span>
+                        <p>This closes the matching tabs. You can't specify a window when using this action.</p>
+                    </li>
+                </ul>
+            </blockquote>
+
+            <h3 id="okay-but-how-do-trigger-the-macro">Okay, but how do I trigger the macro?</h3>
+            <blockquote>
+                <p>Within Tab Organizer, click on the Menu button in the upper-left corner. Open the "Macros..." submenu, which shows a list of all your macros.</p>
+                <p>You can trigger a single macro by selecting it, but there is also an "Apply all macros" item, that triggers all the macros in sequence.</p>
+                <p>Unlike triggering a single macro, "Apply all macros" takes into account all the macros. Macros higher in the list have higher priority, and will override macros that are lower in the list.</p>
+                <p>As an example, suppose you have these two macros:</p>
+                    <ol>
+                        <li>require <b>foo</b> in "Foo"</li>
+                        <li>require <b>bar</b> in "Bar"</li>
+                    </ol>
+                <p>What if you have a tab that matches both <code>foo</code> and <code>bar</code>? It will be moved into the window "Foo", because that macro is higher in the list. This gives you control over how to handle these kinds of conflicts.
+                </p>
+            </blockquote>
+
+            <h3 id="can-see-some-examples-of-macros-and-what-they-do">Can I see some examples of macros, and what they do?</h3>
+            <blockquote>
+                <ul>
+                    <li>close <b>inurl:chrome://newtab/</b>
+                        <p>This closes all open New Tab pages.</p>
+                    </li>
+                    <li>require <b>intitle:file: | is:image</b> in "Images"
+                        <p>This makes sure that the window "Images" contains tabs that are images. This includes Wiki tabs that are wrappers around images, like <a href="http://en.wikipedia.org/wiki/File:LogicGates.svg">this page</a>.</p>
+                    </li>
+                    <li>require <b>inurl:google.com/search</b> in "Search"
+                        <p>Usually, I use Google to search for something, then end up leaving the search results page open even when I no longer need it. This macro moves them into their own window, making it easy to manually close them.</p>
+                    </li>
+                    <li>require <b>wikipedia</b> in "Wikipedia"
+                        <p>I don't know about you, but I tend to read Wikipedia a lot, and end up with Wikipedia tabs scattered all over the place. This macro moves them into a single "Wikipedia" window, thus causing less clutter.</p>
+                    </li>
+                    <!--<li><span style="white-space: nowrap;">require <b>paul graham | scott berkun | inurl:joelonsoftware.com</b></span> in "Blogs"
+                        <p>I also read blogs by some people, and this macro moves them into the "Blogs" window. This shows how you can use the | operator to move different tabs into a single window.</p>
+                    </li>-->
+                    <li>require <b>inurl:youtube.com</b> in "YouTube"
+                        <p>This moves all the YouTube tabs into the "YouTube" window. This also demonstrates the <code>inurl:</code> special query.</p>
+                    </li>
+                </ul>
+                <p>I use many others, but they tend to fit into my lifestyle and the kinds of tabs that I use. Make your own and experiment to find macros that work good for you.</p>
+            </blockquote>
+
+            <h3 id="can-you-explain-usage-tracking">Can you explain usage tracking?</h3>
+            <blockquote>
+                <p>Tab Organizer uses Google Analytics, which is also used by many other websites. Google Analytics tracks many things, such as browser, screen resolution, time spent on the site, etc.</p>
+                <p>However, I'm not interested in most of the information that Google Analytics gives me. I mostly use it to track the options page. This lets me see what settings are popular, so I can reorder them or change the defaults.</p>
+                <p>You can disable usage tracking in the options page, in the Privacy category. It will tell Google Analytics that you have disabled usage tracking. This lets me see how many users have disabled it. Nothing else is tracked after you disable usage tracking.</p>
+            </blockquote>
+
+            <h3 id="what-things-are-tracked">What things are tracked?</h3>
+            <blockquote>
+                <p>These things are tracked, and cannot be disabled in Tab Organizer:</p>
+                <ul class="indent">
+                    <li>How many users have visited the FAQ page.</li>
+                    <li>How many users have visited the recent changes/changelog page.</li>
+                    <li>How many users have installed Tab Organizer.</li>
+                    <li>How many users have visited the bugs/feature requests page.</li>
+                    <li>What issues are most visited.</li>
+                </ul>
+
+                <p>These things are tracked, but can be disabled:</p>
+                <ul class="indent">
+                    <li>How frequently users reload Tab Organizer (this usually means restarting Chrome).</li>
+                    <li>How frequently users open the popup.</li>
+                    <li>How frequently users open the options page.</li>
+                    <li>What options users choose in the options page.</li>
+                    <li>How many windows and tabs the user has.</li>
+                    <li>How many favorites and macros the user has.</li>
+                    <li>The version of Tab Organizer that is currently installed.</li>
+                    <li>The type of user. Currently, this is either "normal" or "developer".</li>
+                </ul>
+
+                <p>However, we do <strong>not</strong> track the following:</p>
+                <ul class="indent">
+                    <li>Title or URL of any tab, except the ones mentioned above.</li>
+                    <li>Search queries.</li>
+                    <li>Window names.</li>
+                </ul>
+            </blockquote>
+
+            <h3 id="why-is-usage-tracking-enabled-by-default">Why is usage tracking enabled by default?</h3>
+            <blockquote>
+                <p>Simply because the information provided is anonymous, and has already been useful for improving Tab Organizer. Unfortunately, if it was disabled by default, I think most users would not enable it, even if they didn't have a problem with usage tracking.</p>
+                <p>I think that the information that Tab Organizer tracks is not personal, and that most users would not have a problem with me using this information to help make Tab Organizer better for everybody.</p>
+                <p>However, if I'm wrong, and most of my users would in fact object to usage tracking, then I would seriously consider having it off by default.</p>
+            </blockquote>
+
+            <h3 id="how-has-usage-tracking-been-beneficial">How has usage tracking been beneficial?</h3>
+            <blockquote>
+                <p>When Tab Organizer first got keyboard shortcut support, the default was <code>Ctrl</code> + <code>Shift</code> + <code>O</code>. Unfortunately, this shortcut is difficult for QWERTY users to use, and might be mistaken as <code>Ctrl</code> + <code>O</code> (which means "Open" in Chrome).</p>
+                <p>By using Google Analytics, I was able to see what keyboard shortcuts were popular. I didn't like most of the popular ones, but one in particular I liked: <code>Ctrl</code> + <code>Shift</code> + <code>E</code>.</p>
+                <p>This is easy to use for both QWERTY and Dvorak users, and I am unaware of any conflicts with Chrome. If I had not used usage tracking, the default might still be <code>Ctrl</code> + <code>Shift</code> + <code>O</code>, despite it being worse.</p>
+                <p>As another example: in the options page, the Keyboard category used to be at the top, with Theme being second. By using Google Analytics, I noticed that Theme was more popular, so I changed Theme to be the first category.</p>
+                <p>Usage tracking is also great for experimental features, which must be enabled in the options page. By seeing how many users use experimental features, I can make a more educated decision about whether to support them or not.</p>
             </blockquote>
         </div>
     </div>

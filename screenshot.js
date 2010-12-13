@@ -360,7 +360,7 @@ Platform.windows.getAll = (function () {
                 }])
             ]);
 
-            removeEventListener("unload", state.saveTitles, true);
+            //removeEventListener("unload", state.saveTitles, true);
 //        }, 0);
     };
 }());
