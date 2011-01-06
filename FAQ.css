@@ -39,6 +39,16 @@ li {
 span.emphasis {
     font-weight: bold;
 }
+span.match, span.action { color: brown; }
+code.key {
+    color: midnightblue;
+    font-variant: small-caps;
+}
+span.nowrap { color: midnightblue; }
+code, span.nowrap, span.match {
+    white-space: nowrap;
+}
+
 ol {
     margin-left: 1em;
     text-align: left;
