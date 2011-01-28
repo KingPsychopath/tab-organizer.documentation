@@ -16,8 +16,8 @@ Platform.windows.getAll = (function () {
         };
     }
     Window.index = 9000;
-
-    var saved = Platform.windows.getAll;
+//
+//!    var saved = Platform.windows.getAll;
 
 
     /* Favicon images are copyrighted. I believe this falls under fair use. */
@@ -64,7 +64,7 @@ Platform.windows.getAll = (function () {
         "http://s.ytimg.com/yt/favicon-vflZlzSbU.ico": "data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAD%2F%2F%2F8AEiP%2F%2FxIj%2F%2F8SI%2F%2F%2FEyP%2F%2FxIj%2F%2F8SI%2F%2F%2FEiP%2F%2FxIj%2F%2F8SI%2F%2F%2FEyP%2F%2FxIj%2F%2F8SI%2F%2F%2FEiP%2F%2FxIj%2F%2F%2F%2F%2F%2F8AEiP%2F%2FwAc7v8AHO7%2FAB3v%2FwAc7v8AHO7%2FABzu%2FwAc7v8AHO7%2FABzu%2FwAd7%2F8AHe%2F%2FABzu%2FwAc7%2F8AHe%2F%2FEiP%2F%2FxIj%2F%2F8SI%2F%2F%2F%2F%2F%2F%2F%2F09V%2F%2F%2B6uv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F9PVf%2F%2Fz87%2F%2F%2F%2F%2F%2F%2F%2Bysv%2F%2FEiP%2F%2F5ub%2F%2F%2F%2F%2F%2F%2F%2F0tH%2F%2FxIj%2F%2F8SI%2F%2F%2FEiP%2F%2F%2F%2F%2F%2F%2F9PVf%2F%2F%2F%2F%2F%2F%2FxIj%2F%2F%2F%2F%2F%2F%2F%2FT1X%2F%2F%2F%2F%2F%2F%2F8SI%2F%2F%2F%2F%2F%2F%2F%2F5qZ%2F%2F%2F%2F%2F%2F%2F%2FEiP%2F%2FxIj%2F%2F8TI%2F%2F%2FEiP%2F%2FxIj%2F%2F%2F%2F%2F%2F%2F%2FT1X%2F%2F%2F%2F%2F%2F%2F8TI%2F%2F%2F%2F%2F%2F%2F%2F09V%2F%2F%2F%2F%2F%2F%2F%2FEiP%2F%2F%2F%2F%2F%2F%2F%2Bamf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FS0f%2F%2FEiP%2F%2FxIj%2F%2F8SI%2F%2F%2F%2F%2F%2F%2F%2F09V%2F%2F%2F%2F%2F%2F%2F%2FEiL%2F%2F%2F%2F%2F%2F%2F9PVf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2B6uv%2F%2FEiP%2F%2F7q6%2F%2F%2Fv8P%2F%2F0tH%2F%2FxIj%2F%2F8SI%2F%2F%2FEyP%2F%2F%2F%2F%2F%2F%2F8SI%2F%2F%2FEiP%2F%2FxIj%2F%2F8SI%2F%2F%2FEiP%2F%2F%2F%2F%2F%2F%2F8SI%2F%2F%2FEiP%2F%2FxIj%2F%2F8SI%2F%2F%2FEiP%2F%2FxIj%2F%2F8SI%2F%2F%2FEiP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FxIj%2F%2F8SI%2F%2F%2FEiP%2F%2FxMj%2F%2F%2F%2F%2F%2F%2F%2FEiP%2F%2FxIj%2F%2F8SI%2F%2F%2FEiP%2F%2FxIj%2F%2F8SI%2F%2F%2FEiP%2F%2F9nZ%2F%2F8SI%2F%2F%2FEiP%2F%2FxMj%2F%2F8SI%2F%2F%2FEiP%2F%2FxIj%2F%2F8SI%2F%2F%2FEiP%2F%2FxIj%2F%2F8SI%2F%2F%2FEiP%2F%2FxIj%2F%2F8SI%2F%2F%2FEiL%2F%2F9na%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2Br5%2Fb%2FAAAA%2F%2F372P%2F%2F%2F%2F%2F%2FR5K5%2FwAAAP%2FIiWb%2F%2F%2F%2F%2F%2F26v1f8AAAD%2FrGZE%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2Fqub1%2FwAAAP%2F%2B%2FNj%2Fqub2%2FwAAAP%2F%2F%2F%2F%2F%2FAAAA%2F%2F782P8TcJ3%2F%2FvzY%2FwAAAP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F6rm9f8AAAD%2F%2FvzY%2F6rm9v8AAAD%2F%2F%2F%2F%2F%2FwAAAP%2F%2B%2FNj%2FAAAA%2F%2F%2F%2F%2F%2F8AAAD%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F9ur9b%2FAAAA%2F%2BPFov%2F%2F%2F%2F%2F%2FR5K6%2FwAAAP%2FJiWb%2F%2F%2F%2F%2F%2FwAAAP%2F%2F%2F%2F%2F%2FAAAA%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FAAAA%2F%2F%2Bp7%2F8AAAD%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2Fbq7V%2FwxKf%2F%2F%2F%2F%2F%2F%2FrGZE%2F%2BPFov%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FgAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA%3D%3D"
     };
 
-    return function (info, action) {
+    return function (/*info, action*/) {
 //        setTimeout(function () {
 //        saved(info, function (windows) {
 //            windows.forEach(function (win) {
@@ -79,20 +79,21 @@ Platform.windows.getAll = (function () {
 //            action(windows);
 //        });
 //        return;
-
+//
 //            var titles = state.titles;
 //            addEventListener("unload", function () {
 ////                state.list.forEach(function (item, i) {
 ////                    item.tabIcon.indexText.value = titles[i];
 ////                });
 //                //state.titles = titles;
-
+//
 //                localStorage["window.titles"] = JSON.stringify(titles);
 //            }, true);
-
+//
             state.titles = ["Main", "Wikipedia", "Mozilla", "YouTube"];
 
-            action([
+//            action([
+            return [
                 Window({}, [{
                     favIconUrl: icon["http://wordsmith.org/favicon.ico"],
                     title: "pleiad_large.jpg (800\u00d7577)",
@@ -358,8 +359,8 @@ Platform.windows.getAll = (function () {
                     title: "Best VGM 186 - Super Mario Land 2 - Star Maze",
                     url: "http://www.youtube.com/watch?v=EmD9WnLYR5I"
                 }])
-            ]);
-
+            ];
+//
             //removeEventListener("unload", state.saveTitles, true);
 //        }, 0);
     };

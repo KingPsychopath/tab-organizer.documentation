@@ -92,6 +92,9 @@
                             <li><span class="emphasis">Focus a tab:</span>
                                 <p><code class="key">Up</code> or <code class="key">Down</code> arrow keys.</p>
                             </li>
+                            <li><span class="emphasis">Un/indent a tab:</span>
+                                <p><code class="key">Left</code> or <code class="key">Right</code> arrow keys.</p>
+                            </li>
                             <li><span class="emphasis">Select a tab:</span>
                                 <p><code class="key">Ctrl</code> or <span class="nowrap"><code class="key">Shift</code> + <code class="key">Space</code>/<code class="key">Enter</code></span></p>
                                 <p>e.g. <span class="nowrap"><code class="key">Ctrl</code> + <code class="key">Space</code></span> is the same as <span class="nowrap"><code class="key">Ctrl</code> + <code class="key">Click</code></span>, and <span class="nowrap"><code class="key">Shift</code> + <code class="key">Space</code></span> is the same as <span class="nowrap"><code class="key">Shift</code> + <code class="key">Click</code></span>.</p>
@@ -239,6 +242,9 @@
                         <p>This <em>adds</em> items to the search. For instance, <code>google OR youtube</code> would show tabs that match either <span class="match">google</span> or <span class="match">youtube</span>.</p>
                         <p>You can also use the <code>|</code> character, like this: <code>google | youtube</code></p>
                     </li>
+                    <li><span class="emphasis"><code>( )</code></span>
+                        <p>Ordinarily, AND has higher precedence than OR, but you can use parentheses to override that, like so: <code>foo (bar | qux)</code></p>
+                    </li>
                     <li><span class="emphasis"><code>"</code> <em>foo</em> <code>"</code></span>
                         <p>This is a shortcut for <code>r/\b</code> <em><strong>foo</strong></em> <code>\b/i</code></p>
                         <p>That means <code>"foo"</code> is the same as <code>r/\bfoo\b/i</code></p>
@@ -256,7 +262,7 @@
 
             <h3 id="what-has-higher-precedence-and-or">What has higher precedence: AND or OR?</h3>
             <blockquote>
-                <p>AND has higher precedence. That means:</p>
+                <p>AND has higher precedence. This can be overriden with parentheses (see above). That means:</p>
                 <ul>
                     <li><code>foo bar | qux</code>
                         <p>(foo AND bar) OR qux</p>
