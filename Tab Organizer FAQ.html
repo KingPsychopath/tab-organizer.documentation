@@ -340,10 +340,13 @@
                     <li>close <b>inurl:chrome://newtab/</b>
                         <p>This closes all the New Tab pages.</p>
                     </li>
-                    <li>require <b>intitle:file: | is:image</b> in "Images"
+                    <li>require <b>intitle:r/^File:/ | is:image</b> in "Images"
                         <p>This makes sure that the window <span class="match">Images</span> contains tabs that are images. This includes Wiki tabs that are <a href="http://en.wikipedia.org/wiki/File:LogicGates.svg">wrappers around images</a>.</p>
                     </li>
-                    <li>require <b>inurl:google.com/search</b> in "Search"
+                    <li>require <b>"404" | intitle:r/^Oops! (?:Google Chrome could not|This link appears to be broken)/</b> in "Error"
+                        <p>This tries to find sites that are broken, and moves them into their own window to make it easy to find them.</p>
+                    </li>
+                    <li>require <b>inurl:r/google.com\/(?:search|images|imgres)/</b> in "Search"
                         <p>Usually, I use Google to search for something, then end up leaving the search results page open even when I no longer need it. This macro moves them into their own window, making it easy to manually close them.</p>
                     </li>
                     <li>require <b>wikipedia</b> in "Wikipedia"
@@ -353,7 +356,7 @@
                         <p>I also read blogs by some people, and this macro moves them into the "Blogs" window. This shows how you can use the | operator to move different tabs into a single window.</p>
                     </li>-->
                     <li>require <b>inurl:youtube.com</b> in "YouTube"
-                        <p>This moves all the YouTube tabs into the <span class="match">YouTube</span> window. This also demonstrates the <code>inurl:</code> special query.</p>
+                        <p>This moves all the YouTube tabs into the <span class="match">YouTube</span> window.</p>
                     </li>
                 </ul>
                 <p>I use many others, but they tend to fit into my lifestyle and the kinds of tabs that I use. Make your own and experiment to find macros that work good for you.</p>
