@@ -71,7 +71,7 @@ ol > li {
 
     width: 100%;
     /*margin-top: 1em;*/
-    overflow: hidden;
+    /*overflow: hidden;*/
     /*padding-right: 4em;*/
 
     /*height: 100%;*/
@@ -126,6 +126,7 @@ ol > li {
     /*float: right;*/
 
     /*width: 35em;*/
+    /*max-width: 35em;*/
     padding-left: 23em;
     padding-right: 5em;
     /*width: 640px;*/

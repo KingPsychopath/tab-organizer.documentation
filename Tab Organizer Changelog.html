@@ -1,480 +1,493 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-    <title>Tab Organizer Changelog</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <title>Tab Organizer Changelog</title>
 
-    <link rel="stylesheet" type="text/css" href="Changelog.css" />
+  <link rel="stylesheet" type="text/css" href="Changelog.css" />
 
-    <!--
-        http://goo.gl/zZJT
-    -->
+  <!--
+    http://goo.gl/zZJT
+  -->
 
-    <script>
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-9285544-4']);
-        _gaq.push(['_trackPageview']);
+  <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-9285544-4']);
+    _gaq.push(['_trackPageview']);
 
-        (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-    </script>
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
 </head>
 <body>
-    <div id="content">
-        <h1>Tab Organizer Changelog</h1>
-        <h2 title="2011-02-14">Version 3.7</h2>
+  <div id="content">
+    <h1>Tab Organizer Changelog</h1>
+    <h2 title="2011-02-28">Version 3.8</h2>
+    <ul>
+      <li class="critical">The past search list has been changed. If you had more than 50, any beyond that point will be lost.</li>
+
+      <hr />
+
+      <li><h3>New features:</h3>
         <ul>
-            <li><h3>New features:</h3>
-                <ul>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=136">Issue 136</a>: Sort windows by name.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=137">Issue 137</a>: "last:moved" special query.</li>
-                </ul>
-            </li>
-            <li><h3>Bug fixes:</h3>
-                <ul>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=1">Issue 1</a>: Quickly pressing the hotkey (to open Tab Organizer) doesn't work.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=132">Issue 132</a>: Undo bar should not fade out when the popup/tab is not focused.</li>
-                </ul>
-            </li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=131">Issue 131</a>: Sorting tabs by title or URL.</li>
         </ul>
+      </li>
+    </ul>
 
-        <h2 title="2011-01-28">Version 3.6.5</h2>
+    <h2 title="2011-02-14">Version 3.7</h2>
+    <ul>
+      <li><h3>New features:</h3>
         <ul>
-            <li><h3>Bug fixes:</h3>
-                <ul>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=130">Issue 130</a>: Tab Organizer stopped working in recent chromium builds</li>
-                </ul>
-            </li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=136">Issue 136</a>: Sort windows by name.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=137">Issue 137</a>: "last:moved" special query.</li>
         </ul>
-
-        <h2 title="2011-01-27">Version 3.6</h2>
+      </li>
+      <li><h3>Bug fixes:</h3>
         <ul>
-            <li><h3>New features:</h3>
-                <ul>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=127">Issue 127</a>: Display tabs in a tree, like <a href="https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/">Tree Style Tabs</a>.</li>
-                </ul>
-            </li>
-            <li><h3>Bug fixes:</h3>
-                <ul>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=17">Issue 17</a>: When moving tabs around, the order is messed up.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=126">Issue 126</a>: Certain URLs can break Tab Organizer</li>
-                </ul>
-            </li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=1">Issue 1</a>: Quickly pressing the hotkey (to open Tab Organizer) doesn't work.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=132">Issue 132</a>: Undo bar should not fade out when the popup/tab is not focused.</li>
         </ul>
+      </li>
+    </ul>
 
-        <h2 title="2011-01-06">Version 3.5</h2>
+    <h2 title="2011-01-28">Version 3.6.5</h2>
+    <ul>
+      <li><h3>Bug fixes:</h3>
         <ul>
-            <li>The search engine has been improved substantially. It now allows for new syntax and has more consistent syntax rules.</li>
-
-            <hr />
-
-            <li><h3>New features:</h3>
-                <ul>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=113">Issue 113</a>: is:bookmarked special query.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=119">Issue 119</a>: Click to select, double click to focus.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=121">Issue 121</a>: Implement a grid-based window view.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=123">Issue 123</a>: Allow for sorting windows based on the number of tabs.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=124">Issue 124</a>: is:pinned special query.</li>
-                </ul>
-            </li>
-            <li><h3>Bug fixes:</h3>
-                <ul>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=115">Issue 115</a>: Window focus is buggy when switching tabs.</li>
-                </ul>
-            </li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=130">Issue 130</a>: Tab Organizer stopped working in recent chromium builds</li>
         </ul>
+      </li>
+    </ul>
 
-        <h2 title="2010-12-12">Version 3.4</h2>
+    <h2 title="2011-01-27">Version 3.6</h2>
+    <ul>
+      <li><h3>New features:</h3>
         <ul>
-            <li>The "New Window" button has been replaced with a "Menu" button. "New Window" is now an item within the "Menu" button.</li>
-            <li>The "Help" link has been renamed to "FAQ".</li>
-
-            <hr />
-
-            <li><h3>New features:</h3>
-                <ul>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=106">Issue 106</a>: Macros to perform repetitive actions on tabs.</li>
-                </ul>
-            </li>
-            <li><h3>Bug fixes:</h3>
-                <ul>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=81">Issue 81</a>: Can't un/favorite a tab with the keyboard.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=95">Issue 95</a>: Add a close/save button to the options page.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=100">Issue 100</a>: Tabs do not remain selected when the tab changes.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=107">Issue 107</a>: is:selected special query doesn't update correctly.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=110">Issue 110</a>: Tabs behave strangely after moving them.</li>
-                </ul>
-            </li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=127">Issue 127</a>: Display tabs in a tree, like <a href="https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/">Tree Style Tabs</a>.</li>
         </ul>
-
-        <h2 title="2010-11-09">Version 3.3</h2>
+      </li>
+      <li><h3>Bug fixes:</h3>
         <ul>
-            <li><h3>New features:</h3>
-                <ul>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=92">Issue 92</a>: Add the "same:domain" special query.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=94">Issue 94</a>: Option for the counter to show all open tabs.</li>
-                </ul>
-            </li>
-            <li><h3>Bug fixes:</h3>
-                <ul>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=88">Issue 88</a>: Tab Counter resets once per minute, rather than once per day.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=93">Issue 93</a>: Special search-queries are not colored red when reloading.</li>
-                </ul>
-            </li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=17">Issue 17</a>: When moving tabs around, the order is messed up.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=126">Issue 126</a>: Certain URLs can break Tab Organizer</li>
         </ul>
-        <h2 title="2010-10-27">Version 3.2</h2>
-        <ul>
-            <li>We no longer scroll within Tab Organizer to a window when it's clicked on.</li>
-            <li>Adding in the Experimental category to the options page.</li>
+      </li>
+    </ul>
 
-            <hr />
+    <h2 title="2011-01-06">Version 3.5</h2>
+    <ul>
+      <li>The search engine has been improved substantially. It now allows for new syntax and has more consistent syntax rules.</li>
 
-            <li><h3>New features:</h3>
-                <ul>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=10">Issue 10</a>: [Experimental] Provide a hotkey for closing Tab Organizer.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=86">Issue 86</a>: [Experimental] Counter showing how many tabs the user has opened/closed.</li>
-                </ul>
-            </li>
-            <li><h3>Bug fixes:</h3>
-                <ul>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=66">Issue 66</a>: Context menu mask relies on degrees.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=69">Issue 69</a>: Horizontal scrolling is messed up when refreshing.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=77">Issue 77</a>: Move selected to... submenu has overflow problems.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=80">Issue 80</a>: Left/right bug with the context menu.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=82">Issue 82</a>: Possible to undo an action even when the undo bar is not visible.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=83">Issue 83</a>: Context menu keyboard shortcuts are global, not local.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=87">Issue 87</a>: Bubble mode layout is broken.</li>
-                </ul>
-            </li>
-        </ul>
-        <h2 title="2010-10-17">Version 3.1</h2>
-        <ul>
-            <li>We now use <code>chrome://favicon/</code> to prevent new requests being sent every time the popup is loaded.</li>
+      <hr />
 
-            <hr />
+      <li><h3>New features:</h3>
+        <ul>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=113">Issue 113</a>: is:bookmarked special query.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=119">Issue 119</a>: Click to select, double click to focus.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=121">Issue 121</a>: Implement a grid-based window view.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=123">Issue 123</a>: Allow for sorting windows based on the number of tabs.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=124">Issue 124</a>: is:pinned special query.</li>
+        </ul>
+      </li>
+      <li><h3>Bug fixes:</h3>
+        <ul>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=115">Issue 115</a>: Window focus is buggy when switching tabs.</li>
+        </ul>
+      </li>
+    </ul>
 
-            <li><h3>New features:</h3>
-                <ul>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=8">Issue 8</a>: Focus the window when selecting it within Tab Organizer.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=9">Issue 9</a>: Make it so new windows appear underneath Tab Organizer.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=65">Issue 65</a>: Ability to mark certain tabs as special in some way.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=74">Issue 74</a>: Change "Move all selected" to "Move selected to..."</li>
-                </ul>
-            </li>
-            <li><h3>Bug fixes:</h3>
-                <ul>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=43">Issue 43</a>: Popup does not immediately sync with the options page.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=53">Issue 53</a>: window:focused doesn't support the dash/hyphen.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=63">Issue 63</a>: Context menu is cut off on the right side of the screen.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=71">Issue 71</a>: Can't delete past queries with the mouse.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=73">Issue 73</a>: Undo bar should be hidden when closing/reloading selected tabs.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=76">Issue 76</a>: Can't use arrow keys and enter to select an item in the menu.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=78">Issue 78</a>: Past queries list causes problems when it's too wide.</li>
-                </ul>
-            </li>
-        </ul>
-        <h2 title="2010-09-30">Version 3.0</h2>
-        <ul>
-            <li>Adding Options and Help links to make it easier to access those pages.</li>
-            <li>Changing the default undo timer to 6.</li>
-            <li>Renaming <code>window:selected</code> to <code>window:focused</code>.</li>
+    <h2 title="2010-12-12">Version 3.4</h2>
+    <ul>
+      <li>The "New Window" button has been replaced with a "Menu" button. "New Window" is now an item within the "Menu" button.</li>
+      <li>The "Help" link has been renamed to "FAQ".</li>
 
-            <hr />
+      <hr />
 
-            <li><h3>New features:</h3>
-                <ul>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=46">Issue 46</a>: Remember past searches.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=57">Issue 57</a>: middle click window name to close entire window</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=59">Issue 59</a>: Sub-menus for the context menu.</li>
-                </ul>
-            </li>
-            <li><h3>Bug fixes:</h3>
-                <ul>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=31">Issue 31</a>: Focus is a little buggy when undoing a "rename window".</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=54">Issue 54</a>: Can't use context menu when right clicking near the bottom of the popup.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=56">Issue 56</a>: Titles are not updated correctly, when closing a window.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=60">Issue 60</a>: Incorrect behavior when opening a window's context menu.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=61">Issue 61</a>: "Default:" tooltip doesn't show for checkbox labels.</li>
-                </ul>
-            </li>
-        </ul>
-        <h2 title="2010-09-19">Version 2.9</h2>
+      <li><h3>New features:</h3>
         <ul>
-            <li class="critical">If you changed how the tab close button is displayed, you will need to change it again. You only need to do this once.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=106">Issue 106</a>: Macros to perform repetitive actions on tabs.</li>
+        </ul>
+      </li>
+      <li><h3>Bug fixes:</h3>
+        <ul>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=81">Issue 81</a>: Can't un/favorite a tab with the keyboard.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=95">Issue 95</a>: Add a close/save button to the options page.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=100">Issue 100</a>: Tabs do not remain selected when the tab changes.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=107">Issue 107</a>: is:selected special query doesn't update correctly.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=110">Issue 110</a>: Tabs behave strangely after moving them.</li>
+        </ul>
+      </li>
+    </ul>
 
-            <hr />
+    <h2 title="2010-11-09">Version 3.3</h2>
+    <ul>
+      <li><h3>New features:</h3>
+        <ul>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=92">Issue 92</a>: Add the "same:domain" special query.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=94">Issue 94</a>: Option for the counter to show all open tabs.</li>
+        </ul>
+      </li>
+      <li><h3>Bug fixes:</h3>
+        <ul>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=88">Issue 88</a>: Tab Counter resets once per minute, rather than once per day.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=93">Issue 93</a>: Special search-queries are not colored red when reloading.</li>
+        </ul>
+      </li>
+    </ul>
+    <h2 title="2010-10-27">Version 3.2</h2>
+    <ul>
+      <li>We no longer scroll within Tab Organizer to a window when it's clicked on.</li>
+      <li>Adding in the Experimental category to the options page.</li>
 
-            <li><h3>New features:</h3>
-                <ul>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=41">Issue 41</a>: Change where the "close tab" button is displayed.</li>
-                </ul>
-            </li>
-            <li><h3>Bug fixes:</h3>
-                <ul>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=3">Issue 3</a>: When closing a tab, it will sometimes "jump" before scrolling to the correct tab.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=4">Issue 4</a>: When closing a tab, the scrolling is off by a couple pixels.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=39">Issue 39</a>: Options events are not cleaned up properly.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=44">Issue 44</a>: Window container focus is messed up sometimes.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=47">Issue 47</a>: Changes are not saved while using bubble mode.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=48">Issue 48</a>: Can't use hotkey to open up Tab Organizer when using bubble mode.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=50">Issue 50</a>: Middle click isn't working.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=52">Issue 52</a>: Settings are not saved when re-opening Tab Organizer.</li>
-                </ul>
-            </li>
-        </ul>
-        <h2 title="2010-09-16">Version 2.8</h2>
-        <ul>
-            <li class="critical">If you used custom window names, you may need to re-enter them. You only need to do this once.</li>
-            <li class="critical">Changing the default hotkey to Ctrl+Shift+E.</li>
-            <li>There is now a <a href="Tab%20Organizer%20FAQ.html">Help/FAQ page</a> available. I plan to update it more over time.</li>
+      <hr />
 
-            <hr />
+      <li><h3>New features:</h3>
+        <ul>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=10">Issue 10</a>: [Experimental] Provide a hotkey for closing Tab Organizer.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=86">Issue 86</a>: [Experimental] Counter showing how many tabs the user has opened/closed.</li>
+        </ul>
+      </li>
+      <li><h3>Bug fixes:</h3>
+        <ul>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=66">Issue 66</a>: Context menu mask relies on degrees.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=69">Issue 69</a>: Horizontal scrolling is messed up when refreshing.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=77">Issue 77</a>: Move selected to... submenu has overflow problems.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=80">Issue 80</a>: Left/right bug with the context menu.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=82">Issue 82</a>: Possible to undo an action even when the undo bar is not visible.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=83">Issue 83</a>: Context menu keyboard shortcuts are global, not local.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=87">Issue 87</a>: Bubble mode layout is broken.</li>
+        </ul>
+      </li>
+    </ul>
+    <h2 title="2010-10-17">Version 3.1</h2>
+    <ul>
+      <li>We now use <code>chrome://favicon/</code> to prevent new requests being sent every time the popup is loaded.</li>
 
-            <li><h3>New features:</h3>
-                <ul>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=36">Issue 36</a>: Change how the undo bar behaves in the options page.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=42">Issue 42</a>: Change the way the close button appears.</li>
-                </ul>
-            </li>
-            <li><h3>Bug fixes:</h3>
-                <ul>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=16">Issue 16</a>: When a window's focus changes, sometimes it doesn't update.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=33">Issue 33</a>: Remover page doesn't always close itself.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=34">Issue 34</a>: Options page and popup can become out of sync.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=35">Issue 35</a>: Cannot undo with keyboard.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=37">Issue 37</a>: Undo bar should not fade out when the mouse is nearby.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=38">Issue 38</a>: All themes still have parts that are blue.</li>
-                </ul>
-            </li>
-        </ul>
+      <hr />
 
-        <h2 title="2010-09-12">Version 2.7</h2>
+      <li><h3>New features:</h3>
         <ul>
-            <li class="critical">If you previously used bubble mode, it will revert back to popup mode. Just open the options page and change it again. You only need to do this once.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=8">Issue 8</a>: Focus the window when selecting it within Tab Organizer.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=9">Issue 9</a>: Make it so new windows appear underneath Tab Organizer.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=65">Issue 65</a>: Ability to mark certain tabs as special in some way.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=74">Issue 74</a>: Change "Move all selected" to "Move selected to..."</li>
+        </ul>
+      </li>
+      <li><h3>Bug fixes:</h3>
+        <ul>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=43">Issue 43</a>: Popup does not immediately sync with the options page.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=53">Issue 53</a>: window:focused doesn't support the dash/hyphen.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=63">Issue 63</a>: Context menu is cut off on the right side of the screen.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=71">Issue 71</a>: Can't delete past queries with the mouse.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=73">Issue 73</a>: Undo bar should be hidden when closing/reloading selected tabs.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=76">Issue 76</a>: Can't use arrow keys and enter to select an item in the menu.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=78">Issue 78</a>: Past queries list causes problems when it's too wide.</li>
+        </ul>
+      </li>
+    </ul>
+    <h2 title="2010-09-30">Version 3.0</h2>
+    <ul>
+      <li>Adding Options and Help links to make it easier to access those pages.</li>
+      <li>Changing the default undo timer to 6.</li>
+      <li>Renaming <code>window:selected</code> to <code>window:focused</code>.</li>
 
-            <li class="critical">We now collect anonymous usage statistics. You can disable this in the options page.</li>
+      <hr />
 
-            <li class="critical">You can now undo various actions. However, it is <strong>not</strong> possible to undo a "close tab" action. Please see <a href="http://code.google.com/p/tab-organizer/issues/detail?id=24">issue 24</a>.</li>
+      <li><h3>New features:</h3>
+        <ul>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=46">Issue 46</a>: Remember past searches.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=57">Issue 57</a>: middle click window name to close entire window</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=59">Issue 59</a>: Sub-menus for the context menu.</li>
+        </ul>
+      </li>
+      <li><h3>Bug fixes:</h3>
+        <ul>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=31">Issue 31</a>: Focus is a little buggy when undoing a "rename window".</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=54">Issue 54</a>: Can't use context menu when right clicking near the bottom of the popup.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=56">Issue 56</a>: Titles are not updated correctly, when closing a window.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=60">Issue 60</a>: Incorrect behavior when opening a window's context menu.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=61">Issue 61</a>: "Default:" tooltip doesn't show for checkbox labels.</li>
+        </ul>
+      </li>
+    </ul>
+    <h2 title="2010-09-19">Version 2.9</h2>
+    <ul>
+      <li class="critical">If you changed how the tab close button is displayed, you will need to change it again. You only need to do this once.</li>
 
-            <hr />
+      <hr />
 
-            <li><h3>New features:</h3>
-                <ul>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=5">Issue 5</a>: The ability to undo actions.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=25">Issue 25</a>: Different color themes.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=26">Issue 26</a>: Show Tab Organizer in a tab, rather than a popup/bubble.</li>
-                </ul>
-            </li>
-            <li><h3>Bug fixes:</h3>
-                <ul>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=16">Issue 16</a>: When a window's focus changes, sometimes it doesn't update.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=22">Issue 22</a>: Uncaught Error: chrome.windows is not supported in content scripts.</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=27">Issue 27</a>: When Alt+Tabbing away from Tab Organizer, the window containers lose focus.</li>
-                </ul>
-            </li>
-        </ul>
-        <h2 title="2010-09-05">Version 2.6</h2>
+      <li><h3>New features:</h3>
         <ul>
-            <li class="developer"><a href="http://code.google.com/p/tab-organizer/issues/detail?id=5">Issue 5</a>: Adding an undo bar. Doesn't do anything right now.</li>
-            <li class="developer"><a href="http://code.google.com/p/tab-organizer/issues/detail?id=15">Issue 15</a>: Abstracting <code>chrome</code> calls into <code>Platform</code> calls. This is the first step in porting Tab Organizer to other browsers.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=41">Issue 41</a>: Change where the "close tab" button is displayed.</li>
+        </ul>
+      </li>
+      <li><h3>Bug fixes:</h3>
+        <ul>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=3">Issue 3</a>: When closing a tab, it will sometimes "jump" before scrolling to the correct tab.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=4">Issue 4</a>: When closing a tab, the scrolling is off by a couple pixels.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=39">Issue 39</a>: Options events are not cleaned up properly.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=44">Issue 44</a>: Window container focus is messed up sometimes.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=47">Issue 47</a>: Changes are not saved while using bubble mode.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=48">Issue 48</a>: Can't use hotkey to open up Tab Organizer when using bubble mode.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=50">Issue 50</a>: Middle click isn't working.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=52">Issue 52</a>: Settings are not saved when re-opening Tab Organizer.</li>
+        </ul>
+      </li>
+    </ul>
+    <h2 title="2010-09-16">Version 2.8</h2>
+    <ul>
+      <li class="critical">If you used custom window names, you may need to re-enter them. You only need to do this once.</li>
+      <li class="critical">Changing the default hotkey to Ctrl+Shift+E.</li>
+      <li>There is now a <a href="Tab%20Organizer%20FAQ.html">Help/FAQ page</a> available. I plan to update it more over time.</li>
 
-            <hr />
+      <hr />
 
-            <li><h3>Bug fixes:</h3>
-                <ul>
-                    <!--<li>When a window's focus changes, sometimes it doesn't update.</li>-->
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=18">Issue 18</a>: tab organizer stopped functioning</li>
-                    <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=19">Issue 19</a>: Bubble mode shows an unnecessary horizontal scrollbar.</li>
-                </ul>
-            </li>
-        </ul>
-        <h2 title="2010-09-03">Version 2.5</h2>
+      <li><h3>New features:</h3>
         <ul>
-            <li>The code that determines which window is focused should work a bit better now.</li>
-            <li class="developer">Adding a ton of unit tests for the Options API.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=36">Issue 36</a>: Change how the undo bar behaves in the options page.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=42">Issue 42</a>: Change the way the close button appears.</li>
+        </ul>
+      </li>
+      <li><h3>Bug fixes:</h3>
+        <ul>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=16">Issue 16</a>: When a window's focus changes, sometimes it doesn't update.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=33">Issue 33</a>: Remover page doesn't always close itself.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=34">Issue 34</a>: Options page and popup can become out of sync.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=35">Issue 35</a>: Cannot undo with keyboard.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=37">Issue 37</a>: Undo bar should not fade out when the mouse is nearby.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=38">Issue 38</a>: All themes still have parts that are blue.</li>
+        </ul>
+      </li>
+    </ul>
 
-            <hr />
+    <h2 title="2010-09-12">Version 2.7</h2>
+    <ul>
+      <li class="critical">If you previously used bubble mode, it will revert back to popup mode. Just open the options page and change it again. You only need to do this once.</li>
 
-            <li><h3>Bug fixes:</h3>
-                <ul>
-                    <li>A selected tab that is in the queue looks the same as a non-selected tab that's in the queue.</li>
-                    <li>When moving tabs around, sometimes the Shift key will get "stuck". Just click a second time to fix it.</li>
-                    <li>When Alt+Tabbing away from Tab Organizer, the window containers lose focus.</li>
-                </ul>
-            </li>
-        </ul>
-        <h2 title="2010-08-27">Version 2.4</h2>
-        <ul>
-            <li>You can now use <code>Alt+Click</code> to close a tab. This is useful if your mouse doesn't have a middle button.</li>
-            <li><h3>Keyboard:</h3>
-                <ul>
-                    <li>The hotkey to open Tab Organizer now works on GMail.</li>
-                    <li>You can now use the <code>Up</code> and <code>Down</code> arrow keys to select tabs while a container is focused.</li>
-                    <li>You can now use <code>(Ctrl/Shift/Alt)+(Space/Enter)</code> to simulate <code>(Ctrl/Shift/Alt)+Click</code>.</li>
-                </ul>
-            </li>
-            <li><h3>Search box:</h3>
-                <ul>
-                    <li>Adding the <code>window:selected</code> search query.</li>
-                </ul>
-            </li>
+      <li class="critical">We now collect anonymous usage statistics. You can disable this in the options page.</li>
 
-            <hr />
+      <li class="critical">You can now undo various actions. However, it is <strong>not</strong> possible to undo a "close tab" action. Please see <a href="http://code.google.com/p/tab-organizer/issues/detail?id=24">issue 24</a>.</li>
 
-            <li><h3>New features:</h3>
-                <ul>
-                    <li>You can now open the popup in a bubble, if you prefer. It's off by default, but you can turn it on in the options page. Some things may be broken in bubble mode.</li>
-                </ul>
-            </li>
-        </ul>
-        <h2 title="2010-08-25">Version 2.3</h2>
-        <ul>
-            <li>We now show the tooltip when hovering over a tab's favicon.</li>
-            <li><h3>Search box:</h3>
-                <ul>
-                    <li>We now remember the last search query that you used.</li>
-                </ul>
-            </li>
-            <li><h3>Keyboard:</h3>
-                <ul>
-                    <li>Shift key now only selects tabs that are visible.</li>
-                </ul>
-            </li>
+      <hr />
 
-            <hr />
+      <li><h3>New features:</h3>
+        <ul>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=5">Issue 5</a>: The ability to undo actions.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=25">Issue 25</a>: Different color themes.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=26">Issue 26</a>: Show Tab Organizer in a tab, rather than a popup/bubble.</li>
+        </ul>
+      </li>
+      <li><h3>Bug fixes:</h3>
+        <ul>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=16">Issue 16</a>: When a window's focus changes, sometimes it doesn't update.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=22">Issue 22</a>: Uncaught Error: chrome.windows is not supported in content scripts.</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=27">Issue 27</a>: When Alt+Tabbing away from Tab Organizer, the window containers lose focus.</li>
+        </ul>
+      </li>
+    </ul>
+    <h2 title="2010-09-05">Version 2.6</h2>
+    <ul>
+      <li class="developer"><a href="http://code.google.com/p/tab-organizer/issues/detail?id=5">Issue 5</a>: Adding an undo bar. Doesn't do anything right now.</li>
+      <li class="developer"><a href="http://code.google.com/p/tab-organizer/issues/detail?id=15">Issue 15</a>: Abstracting <code>chrome</code> calls into <code>Platform</code> calls. This is the first step in porting Tab Organizer to other browsers.</li>
 
-            <li><h3>New features:</h3>
-                <ul>
-                    <li>The window that was last focused is now highlighted when Tab Organizer opens.</li>
-                </ul>
-            </li>
-            <li><h3>Bug fixes:</h3>
-                <ul>
-                    <li>All windows share the same selection queue. Fixing this will require large structure changes.</li>
-                </ul>
-            </li>
-        </ul>
-        <h2 title="2010-08-21">Version 2.2</h2>
+      <hr />
+
+      <li><h3>Bug fixes:</h3>
         <ul>
-            <li>You can now use the Shift key to select multiple tabs at once.</li>
-            <li><h3>Search box:</h3>
-                <ul>
-                    <li>We now select the Search box when using Ctrl/⌘+F, rather than just focusing it.</li>
-                    <li class="developer">Lots of cleanup and refactoring of the <code>window:</code> search query.</li>
-                </ul>
-            </li>
+          <!--<li>When a window's focus changes, sometimes it doesn't update.</li>-->
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=18">Issue 18</a>: tab organizer stopped functioning</li>
+          <li><a href="http://code.google.com/p/tab-organizer/issues/detail?id=19">Issue 19</a>: Bubble mode shows an unnecessary horizontal scrollbar.</li>
         </ul>
-        <h2 title="2010-08-17">Version 2.1</h2>
+      </li>
+    </ul>
+    <h2 title="2010-09-03">Version 2.5</h2>
+    <ul>
+      <li>The code that determines which window is focused should work a bit better now.</li>
+      <li class="developer">Adding a ton of unit tests for the Options API.</li>
+
+      <hr />
+
+      <li><h3>Bug fixes:</h3>
         <ul>
-            <li><h3>Search box:</h3>
-                <ul>
-                    <li>Adding the <code>is:image</code> search query.</li>
-                </ul>
-            </li>
-            <li><h3>Menu items:</h3>
-                <ul>
-                    <li>Adding a "Move all selected" menu item.</li>
-                    <li>Right-clicking within a window container now shows a context menu.</li>
-                </ul>
-            </li>
-            <li><h3>Options page:</h3>
-                <ul>
-                    <li>Large changes to the options page. Things are now divided into groups based on what they change.</li>
-                    <li>You can now use a keyboard shortcut (Ctrl+Shift+O) to open the Tab Organizer. This can be changed in the options page.</li>
-                </ul>
-            </li>
+          <li>A selected tab that is in the queue looks the same as a non-selected tab that's in the queue.</li>
+          <li>When moving tabs around, sometimes the Shift key will get "stuck". Just click a second time to fix it.</li>
+          <li>When Alt+Tabbing away from Tab Organizer, the window containers lose focus.</li>
         </ul>
-        <h2 title="2010-08-03">Version 2.0</h2>
+      </li>
+    </ul>
+    <h2 title="2010-08-27">Version 2.4</h2>
+    <ul>
+      <li>You can now use <code>Alt+Click</code> to close a tab. This is useful if your mouse doesn't have a middle button.</li>
+      <li><h3>Keyboard:</h3>
         <ul>
-            <li>We now show the tab's full title in a tooltip when hovering over the tab's text.</li>
-            <li><h3>Search box:</h3>
-                <ul>
-                    <li>The <code>same:url</code> search query now ignores a trailing slash at the end of the URL.</li>
-                </ul>
-            </li>
-            <li><h3>URL bar:</h3>
-                <ul>
-                    <li>Brightening up the background some more, for readability.</li>
-                    <li>Files (at the end of the URL) are now red. Directories are still blue.</li>
-                    <li>The query and file parts of the URL are now bold.</li>
-                    <li><code>file://</code> URLs are now colored. Before, there was no extra formatting.</li>
-                </ul>
-            </li>
+          <li>The hotkey to open Tab Organizer now works on GMail.</li>
+          <li>You can now use the <code>Up</code> and <code>Down</code> arrow keys to select tabs while a container is focused.</li>
+          <li>You can now use <code>(Ctrl/Shift/Alt)+(Space/Enter)</code> to simulate <code>(Ctrl/Shift/Alt)+Click</code>.</li>
         </ul>
-        <h2 title="2010-07-16">Version 1.9</h2>
+      </li>
+      <li><h3>Search box:</h3>
         <ul>
-            <li class="critical">Changing the default popup size. Users with a custom size shouldn't be affected at all.</li>
-            <li>Adding the window-menu item "Rename window".</li>
-            <li>Reverting the change from <span class="version">Version 1.7</span>: we now select a tab on <code>click</code>.</li>
-            <li>Several small visual tweaks.</li>
+          <li>Adding the <code>window:selected</code> search query.</li>
         </ul>
-        <h2 title="2010-07-08">Version 1.8</h2>
+      </li>
+
+      <hr />
+
+      <li><h3>New features:</h3>
         <ul>
-            <li>Changed the "close window" button into a drop-down menu ("close" is now an item in the menu).</li>
-            <li>Adding "New Tab", "Select all", and "Select none" to the drop-down menu.</li>
-            <li>Adding shading to the "close tab" button so it looks better.</li>
-            <li>Fixed it not scrolling to the selected tab.</li>
-            <li>Made the background color very slightly less red-hued.</li>
-            <li>Bunch of bug fixes for the search queries, especially <code>window:</code>.</li>
-            <li>Adding the <code>is:selected</code> search query.</li>
-            <li class="developer">Adding a ton more unit tests for the search box queries.</li>
+          <li>You can now open the popup in a bubble, if you prefer. It's off by default, but you can turn it on in the options page. Some things may be broken in bubble mode.</li>
         </ul>
-        <h2 title="2010-06-21">Version 1.7</h2>
+      </li>
+    </ul>
+    <h2 title="2010-08-25">Version 2.3</h2>
+    <ul>
+      <li>We now show the tooltip when hovering over a tab's favicon.</li>
+      <li><h3>Search box:</h3>
         <ul>
-            <li class="critical">We now use the GNU Lesser GPL rather than the X11 license.</li>
-            <li>Drag-n-drop now uses a placeholder, rather than moving the tabs right away. This also allows you to cancel the drag.</li>
-            <li>We now select a tab on <code>mousedown</code> rather than <code>click</code>. This helps a bit with accidental dragging.</li>
-            <li>Tried making the custom URL bar easier to read by brightening the background a bit.</li>
-            <li>Various small visual tweaks to make things look better.</li>
+          <li>We now remember the last search query that you used.</li>
         </ul>
-        <h2 title="2010-06-15">Version 1.6</h2>
+      </li>
+      <li><h3>Keyboard:</h3>
         <ul>
-            <li>We still use native drag-n-drop, but it should be significantly better.</li>
-            <li>Renamed the <code>is:duplicate</code> search query to <code>same:url</code>.</li>
-            <li><code>same:url</code> now ignores the hash fragment when finding duplicates.</li>
-            <li>Adding the <code>same:title</code> search query.</li>
-            <li>Adding the <code>inurl:</code> and <code>intitle:</code> search queries.</li>
-            <li>We now use our own custom URL bar in the lower-left corner.</li>
+          <li>Shift key now only selects tabs that are visible.</li>
         </ul>
-        <h2 title="?">Version 1.5</h2>
+      </li>
+
+      <hr />
+
+      <li><h3>New features:</h3>
         <ul>
-            <li class="critical"><code>Left</code> and <code>Top</code> options are handled differently. We now use <code>0%</code> to mean "center", rather than <code>50%</code>. Your settings should still be there, but the results will be different.</li>
-            <li>Fixed the "New Window" button not going to the New Tab page.</li>
-            <li>Vastly improved options page. Added on Reset and Cancel buttons.</li>
-            <li>Made the button(s) in the popup narrower, in case I add on more later.</li>
-            <li class="developer">Improved <code>Options</code> API. Just about everything is better, really.</li>
+          <li>The window that was last focused is now highlighted when Tab Organizer opens.</li>
         </ul>
-        <h2 title="2010-06-10">Version 1.4</h2>
+      </li>
+      <li><h3>Bug fixes:</h3>
         <ul>
-            <li class="critical">Massive changes to the <code>Options</code> API. May break past user's settings.</li>
-            <li>You can now adjust the position and size of the popup in the options page.</li>
+          <li>All windows share the same selection queue. Fixing this will require large structure changes.</li>
         </ul>
-        <h2 title="2010-06-07">Version 1.3</h2>
+      </li>
+    </ul>
+    <h2 title="2010-08-21">Version 2.2</h2>
+    <ul>
+      <li>You can now use the Shift key to select multiple tabs at once.</li>
+      <li><h3>Search box:</h3>
         <ul>
-            <li>We now update the popup's title to show how many tabs and windows you have.</li>
-            <li>Search now properly updates when a tab or window is changed.</li>
-            <li>Fixed the containers "flickering" when first opening the popup.</li>
-            <!--<li>Fixed a bug where the focus is improperly set when tabbing through the containers.</li>-->
+          <li>We now select the Search box when using Ctrl/⌘+F, rather than just focusing it.</li>
+          <li class="developer">Lots of cleanup and refactoring of the <code>window:</code> search query.</li>
         </ul>
-        <h2 title="2010-06-07">Version 1.2</h2>
+      </li>
+    </ul>
+    <h2 title="2010-08-17">Version 2.1</h2>
+    <ul>
+      <li><h3>Search box:</h3>
         <ul>
-            <li>Searching for a window (by label) is now case-insensitive.</li>
-            <li>The "close window" button appears on focus (like it used to). This reverts the change from <span class="version">Version 1.1</span>.</li>
-            <li class="developer">Adding unit tests for the search code and <code>String.prototype.escape</code>.</li>
+          <li>Adding the <code>is:image</code> search query.</li>
         </ul>
-        <h2 title="2010-06-06">Version 1.1</h2>
+      </li>
+      <li><h3>Menu items:</h3>
         <ul>
-            <li>The "close window" button now appears on mouse hover, rather than on focus.</li>
-            <li>You can now change the title of the tab containers.</li>
-            <li>Added support for the Command key (⌘) on Mac for selecting multiple tabs.</li>
+          <li>Adding a "Move all selected" menu item.</li>
+          <li>Right-clicking within a window container now shows a context menu.</li>
         </ul>
-        <h2 title="2010-06-02">Version 1.0.5</h2>
+      </li>
+      <li><h3>Options page:</h3>
         <ul>
-            <li>Added a close button to the right side of the hovered tab.</li>
+          <li>Large changes to the options page. Things are now divided into groups based on what they change.</li>
+          <li>You can now use a keyboard shortcut (Ctrl+Shift+O) to open the Tab Organizer. This can be changed in the options page.</li>
         </ul>
-    </div>
+      </li>
+    </ul>
+    <h2 title="2010-08-03">Version 2.0</h2>
+    <ul>
+      <li>We now show the tab's full title in a tooltip when hovering over the tab's text.</li>
+      <li><h3>Search box:</h3>
+        <ul>
+          <li>The <code>same:url</code> search query now ignores a trailing slash at the end of the URL.</li>
+        </ul>
+      </li>
+      <li><h3>URL bar:</h3>
+        <ul>
+          <li>Brightening up the background some more, for readability.</li>
+          <li>Files (at the end of the URL) are now red. Directories are still blue.</li>
+          <li>The query and file parts of the URL are now bold.</li>
+          <li><code>file://</code> URLs are now colored. Before, there was no extra formatting.</li>
+        </ul>
+      </li>
+    </ul>
+    <h2 title="2010-07-16">Version 1.9</h2>
+    <ul>
+      <li class="critical">Changing the default popup size. Users with a custom size shouldn't be affected at all.</li>
+      <li>Adding the window-menu item "Rename window".</li>
+      <li>Reverting the change from <span class="version">Version 1.7</span>: we now select a tab on <code>click</code>.</li>
+      <li>Several small visual tweaks.</li>
+    </ul>
+    <h2 title="2010-07-08">Version 1.8</h2>
+    <ul>
+      <li>Changed the "close window" button into a drop-down menu ("close" is now an item in the menu).</li>
+      <li>Adding "New Tab", "Select all", and "Select none" to the drop-down menu.</li>
+      <li>Adding shading to the "close tab" button so it looks better.</li>
+      <li>Fixed it not scrolling to the selected tab.</li>
+      <li>Made the background color very slightly less red-hued.</li>
+      <li>Bunch of bug fixes for the search queries, especially <code>window:</code>.</li>
+      <li>Adding the <code>is:selected</code> search query.</li>
+      <li class="developer">Adding a ton more unit tests for the search box queries.</li>
+    </ul>
+    <h2 title="2010-06-21">Version 1.7</h2>
+    <ul>
+      <li class="critical">We now use the GNU Lesser GPL rather than the X11 license.</li>
+      <li>Drag-n-drop now uses a placeholder, rather than moving the tabs right away. This also allows you to cancel the drag.</li>
+      <li>We now select a tab on <code>mousedown</code> rather than <code>click</code>. This helps a bit with accidental dragging.</li>
+      <li>Tried making the custom URL bar easier to read by brightening the background a bit.</li>
+      <li>Various small visual tweaks to make things look better.</li>
+    </ul>
+    <h2 title="2010-06-15">Version 1.6</h2>
+    <ul>
+      <li>We still use native drag-n-drop, but it should be significantly better.</li>
+      <li>Renamed the <code>is:duplicate</code> search query to <code>same:url</code>.</li>
+      <li><code>same:url</code> now ignores the hash fragment when finding duplicates.</li>
+      <li>Adding the <code>same:title</code> search query.</li>
+      <li>Adding the <code>inurl:</code> and <code>intitle:</code> search queries.</li>
+      <li>We now use our own custom URL bar in the lower-left corner.</li>
+    </ul>
+    <h2 title="?">Version 1.5</h2>
+    <ul>
+      <li class="critical"><code>Left</code> and <code>Top</code> options are handled differently. We now use <code>0%</code> to mean "center", rather than <code>50%</code>. Your settings should still be there, but the results will be different.</li>
+      <li>Fixed the "New Window" button not going to the New Tab page.</li>
+      <li>Vastly improved options page. Added on Reset and Cancel buttons.</li>
+      <li>Made the button(s) in the popup narrower, in case I add on more later.</li>
+      <li class="developer">Improved <code>Options</code> API. Just about everything is better, really.</li>
+    </ul>
+    <h2 title="2010-06-10">Version 1.4</h2>
+    <ul>
+      <li class="critical">Massive changes to the <code>Options</code> API. May break past user's settings.</li>
+      <li>You can now adjust the position and size of the popup in the options page.</li>
+    </ul>
+    <h2 title="2010-06-07">Version 1.3</h2>
+    <ul>
+      <li>We now update the popup's title to show how many tabs and windows you have.</li>
+      <li>Search now properly updates when a tab or window is changed.</li>
+      <li>Fixed the containers "flickering" when first opening the popup.</li>
+      <!--<li>Fixed a bug where the focus is improperly set when tabbing through the containers.</li>-->
+    </ul>
+    <h2 title="2010-06-07">Version 1.2</h2>
+    <ul>
+      <li>Searching for a window (by label) is now case-insensitive.</li>
+      <li>The "close window" button appears on focus (like it used to). This reverts the change from <span class="version">Version 1.1</span>.</li>
+      <li class="developer">Adding unit tests for the search code and <code>String.prototype.escape</code>.</li>
+    </ul>
+    <h2 title="2010-06-06">Version 1.1</h2>
+    <ul>
+      <li>The "close window" button now appears on mouse hover, rather than on focus.</li>
+      <li>You can now change the title of the tab containers.</li>
+      <li>Added support for the Command key (⌘) on Mac for selecting multiple tabs.</li>
+    </ul>
+    <h2 title="2010-06-02">Version 1.0.5</h2>
+    <ul>
+      <li>Added a close button to the right side of the hovered tab.</li>
+    </ul>
+  </div>
 </body>
 </html>
