@@ -11,11 +11,21 @@ Platform.windows.getAll = (function () {
             tabs: tabs.map(function (item) {
                 item.id = Window.index + 9001;
                 item.windowId = Window.index;
+                item.window = Window;
                 return item;
             })
         };
     }
     Window.index = 9000;
+
+
+    addEventListener("DOMNodeInsertedIntoDocument", function (event) {
+        var target = event.target;
+        if (target.className === "tab") {
+            var query = target.querySelector(".tab-favicon");
+            query.src = target.tab.favIconUrl;
+        }
+    }, true);
 //
 //!    var saved = Platform.windows.getAll;
 
