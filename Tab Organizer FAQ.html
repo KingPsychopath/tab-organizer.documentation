@@ -96,7 +96,7 @@
                   <p><code class="key">Left</code> or <code class="key">Right</code> arrow keys.</p>
                 </li>
                 <li><span class="emphasis">Select a tab:</span>
-                  <p><code class="key">Ctrl</code> or <span class="nowrap"><code class="key">Shift</code> + <code class="key">Space</code>/<code class="key">Enter</code></span></p>
+                  <p><span class="nowrap"><code class="key">Ctrl</code>/<code class="key">Shift</code> + <code class="key">Space</code>/<code class="key">Enter</code></span></p>
                   <p>e.g. <span class="nowrap"><code class="key">Ctrl</code> + <code class="key">Space</code></span> is the same as <span class="nowrap"><code class="key">Ctrl</code> + <code class="key">Click</code></span>, and <span class="nowrap"><code class="key">Shift</code> + <code class="key">Space</code></span> is the same as <span class="nowrap"><code class="key">Shift</code> + <code class="key">Click</code></span>.</p>
                   <p>You can also use <code class="key">Enter</code> instead of <code class="key">Space</code>. For instance, <span class="nowrap"><code class="key">Ctrl</code> + <code class="key">Enter</code></span>.</p>
                 </li>
@@ -124,6 +124,13 @@
                 </li>
                 <li><span class="emphasis">Everything else:</span>
                   <p>Use the context menu.</p>
+                </li>
+              </ul>
+            </li>
+            <li><span class="emphasis">While a window is not selected:</span>
+              <ul>
+                <li><span class="emphasis">Open the Menu button:</span>
+                  <p><span class="nowrap"><code class="key">Ctrl</code> + <code class="key">M</code></span></p>
                 </li>
               </ul>
             </li>
@@ -207,6 +214,9 @@
             <li><span class="emphasis"><code>seen:url</code></span>
               <p>Shows tabs that you have seen (within Chrome), based on their URL.</p>
             </li>
+            <li><span class="emphasis"><code>will:move</code></span>
+              <p>Shows the tabs that will be moved, if you use <span class="action">Apply all macros</span>.</p>
+            </li>
             <li><span class="emphasis"><code>window:</code></span>
               <p>Shows tabs that are within a certain window. For instance, <code>window:5</code> would show all the tabs in the window named <span class="match">5</span>.</p>
               <p>You can also use a comma to easily show multiple windows at once: <code>window:3,5,9</code></p>
@@ -256,6 +266,7 @@
             </li>
             <li><span class="emphasis"><code>( )</code></span>
               <p>Ordinarily, AND has higher precedence than OR, but you can use parentheses to override that, like so: <code>foo (bar | qux)</code></p>
+              <p>You can also use them to do some pretty complicated stuff. For instance, <code>-(foo | bar)</code> is equivalent to <code>-foo -bar</code>
             </li>
             <li><span class="emphasis"><code>"</code> <em>foo</em> <code>"</code></span>
               <p>This is a shortcut for <code>r/\b</code> <em><strong>foo</strong></em> <code>\b/i</code></p>
@@ -264,7 +275,7 @@
             </li>
             <li><span class="emphasis"><code>r/</code> <em>regexp</em> <code>/</code> <em>[flags]</em></span>
               <p>This gives you the full power of JavaScript's <a href="http://en.wikipedia.org/wiki/Regular_expression">regexp</a> engine.</p>
-              <p>For instance, <code>r/^foo(bar)?$/</code> would find tabs that match <span class="match">foo</span> or <span class="match">foobar</span>, but the word must occur at the start and end. That means it would not match <span class="match">foo bar</span>, <span class="match">barfoo</span>, or <span class="match">bar foo</span>. It is also case-sensitive, so it would not match <span class="match">Foo</span> or <span class="match">fooBaR</span>.</p>
+              <p>For instance, <code>r/^foo(bar)?$/</code> would find tabs that match <span class="match">foo</span> or <span class="match">foobar</span>, but the word must occur at the start and end. That means it would <em>not</em> match <span class="match">foo bar</span>, <span class="match">barfoo</span>, or <span class="match">bar foo</span>. It is also case-sensitive, so it would not match <span class="match">Foo</span> or <span class="match">fooBaR</span>.</p>
               <p>If you want it to be case-insensitive, you can place the <code>i</code> flag after the closing slash, like this: <code>r/foo/i</code> Currently, the only flag that is supported is <code>i</code>.</p>
               <p>Regexps are usually too complicated and clunky to search with, but they can be very useful when used with macros.</p>
             </li>
@@ -295,7 +306,7 @@
 
         <h3 id="how-do-make-macros">How do I make macros?</h3>
         <blockquote>
-          <p>First, open the options page. On the left side, open the <span class="action">Macros</span> category. Use the <span class="action">New macro</span> button to create a macro. A macro is composed of three parts:
+          <p>First, open the options page. On the left side, select the <span class="action">Macros</span> category. Use the <span class="action">New macro</span> button to create a macro. A macro is composed of three parts:
             <ol>
               <li>an action
                 <p>This describes what the macro does.</p>
@@ -304,7 +315,7 @@
                 <p>This describes what tabs will be affected.</p>
               </li>
               <li>an optional window name
-                <p>This specifies a window within Tab Organizer. If the window doesn't exist, it is created. Leaving it blank means "new window".</p>
+                <p>This specifies a <em>single</em> window within Tab Organizer. It must match <em>exactly</em>, including case sensitivity. If the window doesn't exist, it is created automatically. Leaving it blank means "new window".</p>
               </li>
             </ol>
           </p>
@@ -314,14 +325,14 @@
         <blockquote>
           <ul>
             <li><span class="emphasis"><code>ignore</code></span>
-              <p>This causes the tabs to be ignored. This only affects macros lower in the list, not higher.</p>
+              <p>This causes the tabs to be ignored by macros. This only affects macros lower in the list, not higher.</p>
             </li>
             <li><span class="emphasis"><code>require</code></span>
-              <p>This action does two things. First, it takes tabs matching the search query, and moves them into the specified window. Second, it takes tabs that do not match the search query, and moves them out of the specified window.</p>
+              <p>This action does two things. First, it takes tabs matching the search query, and moves them into the specified window. Second, it takes tabs that do <em>not</em> match the search query, and moves them <em>out</em> of the specified window.</p>
               <p>This allows you to divide tabs into windows based on their content. For instance, you may want all <code>wikipedia</code> tabs to be placed into the window named <span class="match">Wikipedia</span>, all the <code>youtube</code> tabs placed into the <span class="match">YouTube</span> window, etc.</p>
             </li>
             <li><span class="emphasis"><code>move</code></span>
-              <p>This is like <code>require</code> except it's one-way: it moves tabs into the window, but doesn't move non-matching tabs out. You can use this to collect many different tabs into a single window.</p>
+              <p>This is like <code>require</code> except it's one-way: it moves tabs into the window, but doesn't move non-matching tabs out. You can use this to collect many different kinds of tabs into a single window.</p>
             </li>
             <li><span class="emphasis"><code>close</code></span>
               <p>This closes the matching tabs. You can't specify a window when using this action.</p>
@@ -331,9 +342,9 @@
 
         <h3 id="okay-but-how-do-trigger-the-macro">Okay, but how do I trigger the macro?</h3>
         <blockquote>
-          <p>Within Tab Organizer, click on the <span class="action">Menu</span> button in the upper-left corner. Open the <span class="action">Macros...</span> submenu, which shows a list of all your macros.</p>
+          <p>Within Tab Organizer, select the <span class="action">Menu</span> button in the upper-left corner. Now select the <span class="action">Macros...</span> submenu, which shows a list of all your macros.</p>
           <p>You can trigger a single macro by selecting it, but there is also an <span class="action">Apply all macros</span> item, that triggers all the macros in sequence.</p>
-          <p>Unlike triggering a single macro, <span class="action">Apply all macros</span> takes into account all the macros. Macros higher in the list have higher priority, and will override macros that are lower in the list.</p>
+          <p>Unlike triggering a single macro, <span class="action">Apply all macros</span> takes all the macros into account. Macros higher in the list have higher priority, and will override macros that are lower in the list.</p>
           <p>As an example, suppose you have these two macros:</p>
             <ol>
               <li>require <b>foo</b> in "Foo"</li>
@@ -413,7 +424,7 @@
         <blockquote>
           <p>Simply because the information provided is anonymous, and has already been useful for improving Tab Organizer. Unfortunately, if it was disabled by default, I think most users would not enable it, even if they didn't have a problem with usage tracking.</p>
           <p>I think that the information that Tab Organizer tracks is not personal, and that most users would not have a problem with me using this information to help make Tab Organizer better for everybody.</p>
-          <p>However, if I'm wrong, and most of my users would in fact object to usage tracking, then I would seriously consider having it off by default.</p>
+          <p>However, if I'm wrong, and most users would in fact object to usage tracking, then I would seriously consider having it off by default.</p>
         </blockquote>
 
         <h3 id="how-has-usage-tracking-been-beneficial">How has usage tracking been beneficial?</h3>
