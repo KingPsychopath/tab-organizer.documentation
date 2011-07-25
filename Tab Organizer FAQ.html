@@ -85,7 +85,7 @@
               <p><span class="nowrap"><code class="key">Ctrl</code> + <code class="key">N</code></span></p>
             </li>
             <li><span class="emphasis">Select a window:</span>
-              <p><code class="key">Tab</code> or <span class="nowrap"><code class="key">Shift</code> + <code class="key">Tab</code></span></p>
+              <p><code class="key">Tab</code><br /><span class="nowrap"><code class="key">Shift</code> + <code class="key">Tab</code></span><br /><span class="nowrap"><code class="key">Ctrl</code> + <code class="key">Left</code>/<code class="key">Right</code>/<code class="key">Up</code>/<code class="key">Down</code></span> arrow keys</p>
             </li>
             <li><span class="emphasis">While a window is selected:</span>
               <ul>
@@ -200,6 +200,9 @@
             </li>
             <li><span class="emphasis"><code>same:domain</code></span>
               <p>Shows tabs whose domains are the same. As an example, two or more tabs on the <span class="match">www.google.com</span> domain would match. If a domain is used by only a single tab, that tab will not be shown.</p>
+            </li>
+            <li><span class="emphasis"><code>same:file</code></span>
+              <p>Shows tabs whose domain + path + file is the same. Basically, it ignores the URL protocol, query, and hash. This is useful for finding similar tabs.</p>
             </li>
             <li><span class="emphasis"><code>same:path</code></span>
               <p>Shows tabs whose domain + path is the same. This is useful for finding similar tabs.</p>
