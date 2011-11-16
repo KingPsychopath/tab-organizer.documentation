@@ -12,6 +12,7 @@ Platform.windows.getAll = (function () {
                 item.id = Window.index + 9001;
                 item.windowId = Window.index;
                 item.window = Window;
+                item.location = {};
                 return item;
             })
         };
