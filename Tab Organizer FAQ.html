@@ -252,12 +252,15 @@
             <li><span class="emphasis"><code>-</code></span>
               <p>Excludes an item from the search. For instance, <code>-google</code> would show all tabs that do <em>not</em> contain the text <span class="match">google</span>.</p>
               <p>This works with special queries as well. For instance, you can use <code>-window:5</code> to show every window <em>except</em> the window named <span class="match">5</span>.</p>
+              <p>It also works with the <code>,</code> syntax: <code>is:image,-pinned</code> would show all the tabs that are images, or all the tabs that are <em>not</em> pinned.</p>
+              <p>And with the <code>window:</code> special query, it can specify a range of windows as well: <code>window:foo-bar</code> would show every window between <span class="match">foo</span> and <span class="match">bar</span>.</p>
             </li>
             <li><span class="emphasis"><code>,</code></span>
-              <p>This only works with special queries. It's an easier way to write <code>OR</code>.</p>
+              <p>This is just an easier way to write <code>OR</code>.</p>
               <p>For example, the query <code>same:url,title</code> is the same as <code>same:url | same:title</code></p>
               <p>And the query <code>inurl:google,wiki</code> is the same as <code>inurl:google | inurl:wiki</code></p>
-              <p><strong>Note:</strong> this only works within one prefix. That means you can't do things like <code>has:macro,is:pinned</code>. You'll need to use <code>has:macro | is:pinned</code>. However, you can do things like this: <code>has:macro | is:pinned,image</code></p>
+              <p>And the query <code>google,youtube</code> is the same as <code>google | youtube</code></p>
+              <p><strong>Note:</strong> this only works within one special query prefix. That means you can't do things like <code>has:macro,is:pinned</code>. You'll need to use <code>has:macro | is:pinned</code>. However, you can do things like <code>has:macro | is:pinned,image</code></p>
             </li>
             <li><span class="emphasis"><em>Space</em></span>
               <p>Using a space is the same as logical AND. This narrows your search to be more specific.</p>
@@ -265,7 +268,7 @@
             </li>
             <li><span class="emphasis"><code>OR</code></span>
               <p>This <em>adds</em> items to the search. For instance, <code>google OR youtube</code> would show tabs that match either <span class="match">google</span> or <span class="match">youtube</span>.</p>
-              <p>You can also use the <code>|</code> character, like this: <code>google | youtube</code></p>
+              <p>You can also use the <code>|</code> or <code>,</code> characters, like this:<br /><code>google | youtube</code><br /><code>google, youtube</code></p>
             </li>
             <li><span class="emphasis"><code>( )</code></span>
               <p>Ordinarily, AND has higher precedence than OR, but you can use parentheses to override that, like so: <code>foo (bar | qux)</code></p>
