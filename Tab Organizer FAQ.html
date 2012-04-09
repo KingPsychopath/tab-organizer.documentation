@@ -174,6 +174,9 @@
             <li><span class="emphasis"><code>inurl:</code></span>
               <p>Shows tabs whose URL matches the supplied text. For instance, <code>inurl:google.com</code> would show tabs that have <span class="match">google.com</span> in their URL.</p>
             </li>
+            <li><span class="emphasis"><code>is:any</code></span>
+              <p>Shows all the tabs. This is equivalent to <code>r/|/</code>.</p>
+            </li>
             <li><span class="emphasis"><code>is:bookmarked</code></span>
               <p>Shows the tabs that are bookmarked within Chrome.</p>
             </li>
@@ -227,6 +230,11 @@
               <p><strong>Note:</strong> this works with custom names too. If you rename a window <span class="match">foo</span>, you can show it with <code>window:foo</code></p>
               <p><strong>Note:</strong> there is a special value called <code>focused</code> that will show the window that is focused within Chrome.</p>
               <p>For instance, <code>window:focused</code> will show the focused window, and <code>window:1-5,focused</code> will show windows <span class="match">1</span> through <span class="match">5</span>, and the focused window.</p>
+              <p><strong>Note:</strong> there is a special value called <code>unnamed</code> that will show all the windows that have not been named.</p>
+            </li>
+            <li><span class="emphasis"><code>window-tabs<=:</code></span>
+              <p>Shows the windows that contain less than or equal to the number of tabs in the query.</p>
+              <p>For instance, <code>window-tabs<=:5</code> shows all windows that have less than or equal to 5 tabs.</p>
             </li>
           </ul>
         </blockquote>
