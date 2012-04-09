@@ -30,6 +30,8 @@
       <nav id="navigation">
         <a id="top" href="">Goto top</a>
         <ol>
+          <li><a href="#why-doesnt-tab-organizer-restore-my-windows-and-tabs-when-reopening-chrome">Why doesn't Tab Organizer restore my windows and tabs when reopening Chrome?</a></li>
+          <hr />
           <li><a href="#what-is-the-difference-between-a-selected-tab-and-a-focused-tab">What's the difference between a selected tab and a focused tab?</a></li>
           <hr />
           <li><a href="#does-tab-organizer-support-keyboard-accessibility">Does Tab Organizer support keyboard accessibility?</a></li>
@@ -58,6 +60,22 @@
 
       <div id="content">
         <h1>Tab Organizer Help/FAQ</h1>
+        
+        <h3 id="why-doesnt-tab-organizer-restore-my-windows-and-tabs-when-reopening-chrome">Why doesn't Tab Organizer restore my windows and tabs when reopening Chrome?</h3>
+        <blockquote>
+          <p>Windows and tabs are handled by Chrome; Tab Organizer merely provides a convenient UI to interact with them. Because of some limitations in Chrome, Tab Organizer cannot know whether a window was closed because Chrome is closing, or whether it was closed because you (the user) closed it.</p>
+          <p>So the only way Tab Organizer could restore the previous tabs is if it kept track of them every, say, 5 minutes, and then when reopening Chrome it would restore the tabs that were open 5 minutes before closing Chrome.</p>
+          <p>That would work reasonably well, except that Chrome already has support for reopening the previous session, so if you use Chrome's system, Tab Organizer would end up reopening the previous tabs twice!</p>
+          <p>So, instead, I recommend that users use Chrome's built-in tab restore system. Here is how to enable it:</p>
+          <ol>
+            <li>Click on the <code>Wrench</code> icon in the upper-right.</li>
+            <li>Click on the <code>Settings</code> item in the menu.</li>
+            <li>Make sure you're in the <code>Settings</code> tab on the left side of the page.</li>
+            <li>Underneath <code>On startup</code> select <code>Continue where I left off</code>.</li>
+          </ol>
+          <p>Now, when you wish to close Chrome, you <b>must</b> use <code>Wrench -> Exit</code> (or the keyboard shortcut). As long as you do that then Chrome will automatically reopen your previous tabs.</p>
+          <p>If you want more fine-grained control over which tabs are reopened, I recommend using one of the many session saver extensions currently available for Chrome, at least until Tab Organizer gets session save functionality.</p>
+        </blockquote>
 
         <h3 id="what-is-the-difference-between-a-selected-tab-and-a-focused-tab">What's the difference between a selected tab and a focused tab?</h3>
         <blockquote>
